@@ -5,7 +5,8 @@ var brimApp = angular
 
       $authProvider.instagram({
         clientId: '94604331f352484ebaec0996c28ebc07',
-        url: '/users/auth/instagram'
+        url: '/users/auth/instagram',
+        redirectUri: 'http://localhost:3000/users/auth/instagram/callback'
       })
 
       $stateProvider
