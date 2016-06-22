@@ -23,6 +23,7 @@ class User < ActiveRecord::Base
         user.token = auth.credentials.token
       end
     end
+    obj
   end
 
 end
