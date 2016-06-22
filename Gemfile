@@ -29,6 +29,9 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-instagram'
 
+# API
+gem 'active_model_serializers'
+
 # ENV
 gem 'figaro'
 
@@ -51,7 +54,8 @@ end
 
 group :test do
   gem 'rspec-rails'
-  gem 'shoulda-matchers'
+  gem 'shoulda'
+  gem 'rspec-collection_matchers'
 end
 
 group :development do
