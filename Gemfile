@@ -24,6 +24,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bower-rails'
 gem 'angular-rails-templates'
+# Authentication
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-instagram'
+
+# ENV
+gem 'figaro'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -36,6 +44,14 @@ gem 'angular-rails-templates'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'coveralls', require: false
+  gem 'factory_girl_rails'
+  gem 'ffaker'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
 end
 
 group :development do
