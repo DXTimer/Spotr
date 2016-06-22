@@ -1,5 +1,9 @@
 class Api::SearchesController < ApplicationController
 
+  def index
+    render json: Search.all
+  end
+
   def create
     search = Search.new(search_params)
     search.user = current_user

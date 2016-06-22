@@ -1,11 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/brim_final/app/helpers/application_helper.rb": [
+      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/brim_final/spec/models/search_spec.rb": [
+      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/spec/models/search_spec.rb": [
         1,
         null,
         2,
@@ -13,7 +13,7 @@
         null,
         null
       ],
-      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/brim_final/app/models/search.rb": [
+      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/models/search.rb": [
         1,
         null,
         1,
@@ -21,19 +21,19 @@
         null,
         null
       ],
-      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/brim_final/app/models/application_record.rb": [
+      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/brim_final/spec/models/tag_spec.rb": [
+      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/spec/models/tag_spec.rb": [
         1,
         null,
         2,
         null,
         null
       ],
-      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/brim_final/app/models/tag.rb": [
+      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/models/tag.rb": [
         1,
         null,
         1,
@@ -41,7 +41,7 @@
         null,
         null
       ],
-      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/brim_final/spec/models/user_spec.rb": [
+      "/Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/spec/models/user_spec.rb": [
         1,
         1,
         null,
@@ -66,6 +66,6 @@
         null
       ]
     },
-    "timestamp": 1466608400
+    "timestamp": 1466628006
   }
 }

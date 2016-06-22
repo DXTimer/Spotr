@@ -1,4 +1,4 @@
-brimApp.controller('AuthController', function($interval, $http, $scope, $window, $location, $rootScope, $auth, $http) {
+brimApp.controller('AuthController', function($interval, $http, $scope, $window, $location, $rootScope, $auth, $http, SearchHistoryService, AuthService) {
   var jsonResponse;
   var pollInterval;
   $scope.handlePopupAuthentication = function handlePopupAuthentication(network, account) {
@@ -14,10 +14,14 @@ brimApp.controller('AuthController', function($interval, $http, $scope, $window,
 
     var poll = $interval(function() {
       jsonResponse = JSON.parse(popup.document.getElementsByTagName('PRE')[0].firstChild.data);
-      console.log(jsonResponse.data.username);
       if (jsonResponse.data.username) {
         localStorage.setItem('username', JSON.stringify(jsonResponse.data.username));
+        localStorage.setItem('id', JSON.stringify(jsonResponse.data.id));
         localStorage.setItem('token', JSON.stringify(jsonResponse.data.token));
+        if(AuthService.isAuthenticated()) {
+          console.log(SearchHistoryService.get())
+          console.log(SearchHistoryService.post())
+        }
         $interval.cancel(poll);
         popup.close();
       };
