@@ -13,8 +13,5 @@
       "ngmap": "^1.x",
       "angular-messages": "^1.5.7"
     }
-  },
-  "vendor": {
-    "name": "bower-rails generated vendor assets"
   }
 }
