@@ -10,7 +10,7 @@ exports.config = {
     'browserName': 'chrome'
   },
 
-  baseUrl: 'http://localhost:8000/',
+  baseUrl: 'http://localhost:3000/',
 
   framework: 'jasmine',
 
@@ -21,9 +21,8 @@ exports.config = {
   onPrepare: function(){
     require('protractor-http-mock').config = {
       rootDirectory: process.cwd(),
-      protractorConfig: 'test/protractor.conf.js'
+      protractorConfig: 'spec/javasripts/protractor.conf.js'
     };
   }
 
 };
-
