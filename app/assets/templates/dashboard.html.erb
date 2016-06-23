@@ -1,7 +1,7 @@
 <div>
   <form>
     <fieldset id="search-block" class="buffer">
-      <input type="text" ng-model="searchParam" id="searchTags" placeholder="Enter something to search" autocomplete="off">
+      <input type="text" ng-model="searchParam" id="searchTags" placeholder="Enter a search by # or Location" autocomplete="off" autofocus>
 
       <div id="button-block" class="buffer">
 
@@ -30,12 +30,12 @@
     </fieldset>
   </form>
 
-  <div class="buffer error">{{error}}</div>
+  <div class="buffer error" ng-hide="error===false">{{error}}</div>
 
   <br>
 
   <div id="tags-list">
-    <p id="relatedTags" ng-repeat='tag in tags' ng-click="saveTag(tag.name)">{{ tag.name }} ({{tag.media_count}})</p>
+    <p id="relatedTags" ng-repeat='tag in tags' ng-click="saveTag(tag.name)">#{{ tag.name }} ({{tag.media_count | number}})</p>
     <p id="relatedTags" ng-repeat='address in addressList' ng-click="getImageByLocation(address.geometry.location.lat,address.geometry.location.lng)">{{ address.formatted_address }}</p>
   </div>
 

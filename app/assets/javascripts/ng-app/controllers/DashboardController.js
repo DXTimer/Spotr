@@ -13,6 +13,19 @@ angular.module("brimApp")
   $scope.locations = [];
   $scope.searchParam = [];
 
+
+  // Moves caret to end of text field 
+  $scope.moveCursorToEnd = function(el) {
+    if (typeof el.selectionStart == "number") {
+        el.selectionStart = el.selectionEnd = el.value.length;
+    } else if (typeof el.createTextRange != "undefined") {
+        el.focus();
+        var range = el.createTextRange();
+        range.collapse(false);
+        range.select();
+    }
+  }
+
   // Map Controller & Location Controller
   var mapEl = $element.find('gmap')[0];
   var mapOptions = {
@@ -162,6 +175,7 @@ angular.module("brimApp")
 
 
   $scope.getTags = function(tagsearch) {
+    $scope.error = null;
     GetTagsService.get(tagsearch).then(function(response) {
       $scope.getResponseSuccess($scope, response, "This hashtag has returned no results" )
       $scope.tags = response.data;
@@ -169,6 +183,7 @@ angular.module("brimApp")
   }
 
   $scope.searchByTags = function(tag) {
+    $scope.error = null;
     if($scope.andOr==='or'){
       $scope.images = [];
       $scope.locations = [];
@@ -194,7 +209,8 @@ angular.module("brimApp")
     // }
   }
 
-  $scope.saveTag = function(tag) {
+  $scope.saveTag = function(tag, el) {
+    // $scope.moveCursorToEnd(el);
     if(Array.isArray($scope.searchParam)) {
       var array = $scope.searchParam
       array.push(tag);
@@ -299,4 +315,5 @@ angular.module("brimApp")
                                                       item.images.thumbnail.url))
     })
   }
+
 });
