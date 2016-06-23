@@ -50,14 +50,14 @@ I want my search history to be loaded by default on my landing page.
 DOMAIN MODEL
 ------------
 
-+![Domain Model](https://github.com/rahulrama/brimserver/blob/master/public/images/Brim.png)
+![Domain Model](https://github.com/rahulrama/brimserver/blob/master/public/images/Brim.png)
 
 MOCKUP
 ------
 
-+![Mockup](https://github.com/rahulrama/brimserver/blob/master/public/images/LandingPageMockup.png)
+![Mockup](https://github.com/rahulrama/brimserver/blob/master/public/images/LandingPageMockup.png)
 
-+![Mockup](https://github.com/rahulrama/brimserver/blob/master/public/images/MapImageDetailMockup.png)
+![Mockup](https://github.com/rahulrama/brimserver/blob/master/public/images/MapImageDetailMockup.png)
 
 
 TECHNOLOGIES
