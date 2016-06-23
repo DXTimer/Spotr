@@ -35,11 +35,5 @@ brimApp.service('GetImageByLocationService', ['$http', function($http) {
       }
     };
 
-    //     // Hampton Court
-    //     // var lat = "51.4036535"+"&";
-    //     // var lng = "-0.3493859"+"&";
-
-
-
   }
 ]);
