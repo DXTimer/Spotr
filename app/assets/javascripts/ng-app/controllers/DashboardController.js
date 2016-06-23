@@ -13,7 +13,7 @@ angular.module("brimApp")
   $scope.locations = [];
   $scope.searchParam = [];
 
-  // Moves caret to end of text field 
+  // Moves caret to end of text field
   $scope.moveCursorToEnd = function(el) {
     if (typeof el.selectionStart == "number") {
         el.selectionStart = el.selectionEnd = el.value.length;
@@ -30,15 +30,15 @@ angular.module("brimApp")
   var $main_color = '#2d313f',
   $saturation= -20,
   $brightness= 5;
-  var style = [ 
+  var style = [
     {
       //set saturation for the labels on the map
       elementType: "labels",
       stylers: [
         {saturation: $saturation}
       ]
-    },  
-      { //poi stands for point of interest - don't show these lables on the map 
+    },
+      { //poi stands for point of interest - don't show these lables on the map
       featureType: "poi",
       elementType: "labels",
       stylers: [
@@ -52,22 +52,22 @@ angular.module("brimApp")
           stylers: [
               {visibility: "off"}
           ]
-      }, 
-    {   
+      },
+    {
       //don't show local road lables on the map
-      featureType: "road.local", 
-      elementType: "labels.icon", 
-      stylers: [
-        {visibility: "off"} 
-      ] 
-    },
-    { 
-      //don't show arterial road lables on the map
-      featureType: "road.arterial", 
-      elementType: "labels.icon", 
+      featureType: "road.local",
+      elementType: "labels.icon",
       stylers: [
         {visibility: "off"}
-      ] 
+      ]
+    },
+    {
+      //don't show arterial road lables on the map
+      featureType: "road.arterial",
+      elementType: "labels.icon",
+      stylers: [
+        {visibility: "off"}
+      ]
     },
     {
       //don't show road lables on the map
@@ -76,25 +76,25 @@ angular.module("brimApp")
       stylers: [
         {visibility: "off"}
       ]
-    }, 
+    },
     //style different elements on the map
-    { 
-      featureType: "transit", 
-      elementType: "geometry.fill", 
+    {
+      featureType: "transit",
+      elementType: "geometry.fill",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
-    }, 
+    },
     {
       featureType: "poi",
       elementType: "geometry.fill",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
     },
@@ -103,8 +103,8 @@ angular.module("brimApp")
       elementType: "geometry.fill",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
     },
@@ -113,8 +113,8 @@ angular.module("brimApp")
       elementType: "geometry.fill",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
     },
@@ -123,8 +123,8 @@ angular.module("brimApp")
       elementType: "geometry.fill",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
     },
@@ -133,8 +133,8 @@ angular.module("brimApp")
       elementType: "geometry.fill",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
     },
@@ -143,8 +143,8 @@ angular.module("brimApp")
       elementType: "geometry.fill",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
     },
@@ -153,8 +153,8 @@ angular.module("brimApp")
       elementType: "geometry.fill",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
     },
@@ -162,19 +162,19 @@ angular.module("brimApp")
       featureType: "landscape",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
-      
+
     },
     {
       featureType: "road",
       elementType: "geometry.fill",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
     },
@@ -183,18 +183,18 @@ angular.module("brimApp")
       elementType: "geometry.fill",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
-    }, 
+    },
     {
       featureType: "water",
       elementType: "geometry",
       stylers: [
         { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
+        { visibility: "on" },
+        { lightness: $brightness },
         { saturation: $saturation }
       ]
     }
@@ -203,7 +203,7 @@ angular.module("brimApp")
   var mapOptions = {
     zoom: 13,
     center: {lat: 51.5020,lng: -0.1281},
-    enableHighAccuracy: true, 
+    enableHighAccuracy: true,
     styles: style
   };
 
@@ -236,35 +236,6 @@ angular.module("brimApp")
   //   });
   // }
 
-
-
-  // $scope.tester = function() {
-  //   var holding = [];
-
-  //   $scope.images = [];
-  //   var storage = [];
-  //   var tags = $scope.searchParam.split("+");
-  //   tags.forEach(function(tag){
-  //     GetImagesByTagService.get(tag).then(function(response){
-  //       storage.push(response.data)
-  //     }).then(function(){
-  //       $scope.images = [].concat.apply([],storage)
-  //     })
-  //   })
-  //   .then(function(){
-  //     var images = $scope.images
-  //     images.forEach(function(image){
-  //       var ctr = 0
-  //       image.tags.forEach(function(tag){
-  //         if(image.tags.includes(tag)){
-  //           ctr++
-  //         }
-  //       })
-  //       if(ctr===images.tags.length){holding.push(image)}
-  //     })
-  //   }).then(function(){$scope.images = holding})
-  // }
-
   $scope.setAndOr = function(arg){
     if(arg==='or'){
       $scope.andOr='or';
@@ -274,6 +245,11 @@ angular.module("brimApp")
       $scope.andOr='and';
       $scope.searchParam = $scope.searchParam.replace(/,/g,'+');
     }
+  }
+
+  $scope.setTagsOrLocation = function(arg){
+    if(arg==='tag'){$scope.tagOrLocation = true}
+    if(arg==='loc'){$scope.tagOrLocation = false}
   }
 
   $scope.tester = function() {
@@ -298,6 +274,43 @@ angular.module("brimApp")
     });
       $scope.images = storage
       $scope.transferInfo($scope.images)
+  }
+
+
+  $scope.getTags = function(tagsearch) {
+    $scope.error = null;
+    $scope.setTagsOrLocation('tag');
+    GetTagsService.get(tagsearch).then(function(response) {
+      $scope.getResponseSuccess($scope, response, "This hashtag has returned no results" )
+      $scope.tags = response.data;
+    });
+  }
+
+  $scope.searchByTags = function(tag) {
+    $scope.error = null;
+    if($scope.andOr==='or'){
+      $scope.images = [];
+      $scope.locations = [];
+      var tags = $scope.searchParam.split(",");
+      if(tags.length<2){
+        $scope.searchOneTag(tag);
+      }
+      else {
+        $scope.searchAllTags();
+      };
+    }
+    // if($scope.andOr==='and'){
+    //   console.log('herp')
+    //   $scope.images = [];
+    //   $scope.locations = [];
+    //   var tags = $scope.searchParam.split("+");
+    //   if(tags.length<2){
+    //     $scope.searchOneTag(tag);
+    //   }
+    //   else {
+    //     $scope.searchImagesWithEachTag();
+    //   };
+    // }
   }
 
   $scope.searchImagesWithEachTag = function() {
@@ -344,42 +357,6 @@ angular.module("brimApp")
       $scope.images = response.data;
       $scope.transferInfo(response.data)
     });
-  }
-
-
-  $scope.getTags = function(tagsearch) {
-    $scope.error = null;
-    GetTagsService.get(tagsearch).then(function(response) {
-      $scope.getResponseSuccess($scope, response, "This hashtag has returned no results" )
-      $scope.tags = response.data;
-    });
-  }
-
-  $scope.searchByTags = function(tag) {
-    $scope.error = null;
-    if($scope.andOr==='or'){
-      $scope.images = [];
-      $scope.locations = [];
-      var tags = $scope.searchParam.split(",");
-      if(tags.length<2){
-        $scope.searchOneTag(tag);
-      }
-      else {
-        $scope.searchAllTags();
-      };
-    }
-    // if($scope.andOr==='and'){
-    //   console.log('herp')
-    //   $scope.images = [];
-    //   $scope.locations = [];
-    //   var tags = $scope.searchParam.split("+");
-    //   if(tags.length<2){
-    //     $scope.searchOneTag(tag);
-    //   }
-    //   else {
-    //     $scope.searchImagesWithEachTag();
-    //   };
-    // }
   }
 
   $scope.saveTag = function(tag, el) {
@@ -436,8 +413,9 @@ angular.module("brimApp")
     });
   }
 
-  $scope.searchByLocation = function(address) {
+  $scope.searchForLocations = function(address) {
     $scope.addressList = []
+    $scope.setTagsOrLocation('loc')
     GetGeocodeService.getGeocode(address).then(function(response) {
       response.forEach(function(address) {
         $scope.addressList.push(address)
