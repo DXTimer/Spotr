@@ -1,6 +1,6 @@
 {
   "lib": {
-    "name": "bower-rails",
+    "name": "bower-rails generated vendor assets",
     "dependencies": {
       "angular": "latest",
       "angular-ui-router": "latest",
