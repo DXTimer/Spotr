@@ -1,9 +1,17 @@
 class Api::SearchesController < ApplicationController
 
+  def index
+    render json: Search.all
+  end
+
   def create
-    search = Search.new(search_params)
-    search.user = current_user
-    tags = search_params[:tags]
+    @user = User.find(search_params[:id])
+    search = @user.searches.new()
+    param_tags = search_params[:tags]
+    tags = []
+    param_tags.each do |tagname|
+      tags << Tag.where(tag_name: tagname).first_or_create
+    end
     tags.each do |tag|
       search.tags << tag
     end
@@ -14,25 +22,10 @@ class Api::SearchesController < ApplicationController
     end
   end
 
-#   def create
-#   @user = User.new(params[:user])
-
-#   respond_to do |format|
-#     if @user.save
-#       flash[:notice] = 'User was successfully created.'
-#       format.html { redirect_to(@user) }
-#       format.xml { render xml: @user, status: :created, location: @user }
-#     else
-#       format.html { render action: "new" }
-#       format.xml { render xml: @user.errors, status: :unprocessable_entity }
-#     end
-#   end
-# end
-
   private
 
   def search_params
-    params.require(:search).permit(:tags)
+    params.require(:search).permit(:id, :uid, :tags => [])
   end
 
 end

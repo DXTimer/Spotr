@@ -16,5 +16,8 @@
 //= require angular-animate
 //= require angular-ui-router
 //= require angular-rails-templates
+//= require satellizer
+//= require ngmap
+//= require angular-messages
 //= require_tree .
 //= require_tree ../templates

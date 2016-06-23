@@ -31,7 +31,7 @@ gem 'omniauth-instagram'
 
 # API
 gem 'active_model_serializers'
-
+gem 'ng-rails-csrf'
 # ENV
 gem 'figaro'
 

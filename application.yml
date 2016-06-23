@@ -1,0 +1,4 @@
+jwt_secret: "supersecurestringyallwontevenknow"
+jwt_algorithm: "HS512"
+INSTAGRAM_APP_ID: "94604331f352484ebaec0996c28ebc07"
+INSTAGRAM_APP_SECRET: "b4428d2220594daba926cf06c4bfd7b8"
