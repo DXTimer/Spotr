@@ -9,7 +9,7 @@ describe User, type: :model do
 
   context '#from_omniauth' do
     it 'creates user from auth callback' do
-      nickname = OpenStruct.new({ nickname: "brim_brom" })
+      nickname = OpenStruct.new({ nickname: "brim_brom"})
       token = OpenStruct.new({ token: "fsd6fs5df6sd6f8a"})
       response = { provider: "Instagram", uid: "1246", info: nickname , credentials: token }
       auth = OpenStruct.new response
