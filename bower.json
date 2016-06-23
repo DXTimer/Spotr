@@ -1,6 +1,6 @@
 {
   "lib": {
-    "name": "bower-rails",
+    "name": "bower rails assets",
     "dependencies": {
       "angular": "latest",
       "angular-ui-router": "latest",
