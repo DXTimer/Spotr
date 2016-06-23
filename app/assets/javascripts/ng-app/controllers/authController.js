@@ -15,6 +15,7 @@ brimApp.controller('AuthController', function($interval, $http, $scope, $window,
     var poll = $interval(function() {
       jsonResponse = JSON.parse(popup.document.getElementsByTagName('PRE')[0].firstChild.data);
       if (jsonResponse.data.username) {
+        console.log(jsonResponse);
         localStorage.setItem('username', JSON.stringify(jsonResponse.data.username));
         localStorage.setItem('id', JSON.stringify(jsonResponse.data.id));
         localStorage.setItem('token', JSON.stringify(jsonResponse.data.token));
