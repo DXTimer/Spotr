@@ -6,12 +6,16 @@ brimApp.service('SearchHistoryService', function($http, $window) {
 			'get': function() {
 				var request = home + '/api/users/'+ localStorage.getItem('id') + "/searches";
 				return $http.get(request).then(function(response) {
-					console.log(response);
+          var tags = [];
+          response.data.forEach(function(tag) {
+            tags.push(tag.tag_name);
+          })
+					localStorage.setItem('tags', JSON.stringify(tags));
 				})
       },
       'post': function() {
 				var request = home + '/api/users/'+ localStorage.getItem('id') + "/searches";
-        var params = JSON.stringify({search: {id:1, uid: 2, tags: ["ball"]}});
+        var params = JSON.stringify({search: {id:1, uid: 2, tags: ["ball", "cat"]}});
         return $http.post(request, params).then(function(response) {
           console.log(params);
           console.log(response);

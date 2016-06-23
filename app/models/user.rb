@@ -18,9 +18,10 @@ class User < ActiveRecord::Base
       create do |user|
         user.uid = auth.uid
         user.provider = auth.provider 
-        user.username = auth.info.nickname 
+        user.username = auth.info.nickname
         user.password = Devise.friendly_token[0,20]
         user.token = auth.credentials.token
+        user.profile_picture = auth.info.image
       end
     end
     obj

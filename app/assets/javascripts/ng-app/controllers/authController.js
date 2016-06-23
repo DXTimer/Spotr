@@ -20,10 +20,11 @@ brimApp.controller('AuthController', function($state, $interval, $http, $scope, 
         localStorage.setItem('username', JSON.stringify(jsonResponse.data.username));
         localStorage.setItem('id', JSON.stringify(jsonResponse.data.id));
         localStorage.setItem('token', JSON.stringify(jsonResponse.data.token));
+        localStorage.setItem('profile_picture', JSON.stringify(jsonResponse.data.profile_picture));
         $rootScope.logged_in = true;
         if(AuthService.isAuthenticated()) {
-          console.log(SearchHistoryService.get())
-          console.log(SearchHistoryService.post())
+          SearchHistoryService.get()
+          SearchHistoryService.post()
         }
         $interval.cancel(poll);
         popup.close();
