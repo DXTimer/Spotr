@@ -1,5 +1,5 @@
 angular.module("brimApp")
-.controller('DashboardController', function($rootScope, $scope, $element, locationFactory, NgMap, mapMarkerService, GetGeocodeService, GetTagsService, GetImagesByTagService, GetImageByLocationService, locationFactory) {
+.controller('DashboardController', function($q, $rootScope, $scope, $element, locationFactory, NgMap, mapMarkerService, GetGeocodeService, GetTagsService, GetImagesByTagService, GetImageByLocationService, locationFactory) {
 
 
   $scope.chosenTags = [];
@@ -145,14 +145,15 @@ angular.module("brimApp")
 
   $scope.searchAllTags = function() {
     $scope.images = [];
-    var storage = [];
-    var tags = $scope.searchParam.split(",");
+    var storage = [], ctr = 0, tags = $scope.searchParam.split(",");
     tags.forEach(function(tag){
       GetImagesByTagService.get(tag).then(function(response){
         storage.push(response.data)
-      }).then(function(){
         $scope.images = [].concat.apply([],storage)
-        $scope.transferInfo($scope.images)
+        ctr++
+        if(ctr===tags.length){
+          $scope.transferInfo($scope.images)
+        }
       })
     })
   }
