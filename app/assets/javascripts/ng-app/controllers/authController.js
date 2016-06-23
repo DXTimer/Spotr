@@ -34,6 +34,6 @@ brimApp.controller('AuthController', function($state, $interval, $http, $scope, 
   $scope.logOut = function logOut() {
     console.log($scope.logged_in = false)
     localStorage.clear();
-    return $state.go('login');
+    return $state.go('/login');
   }
 });
