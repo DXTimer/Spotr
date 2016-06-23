@@ -23,7 +23,7 @@ var brimApp = angular
       .state('dashboard', {
           url: '/',
           templateUrl: 'dashboard.html',
-          controller: 'DashboardCtrl',
+          controller: 'DashboardController',
           data: {
             requireLogin: true
           }
@@ -34,6 +34,14 @@ var brimApp = angular
     $locationProvider.html5Mode(true);
 
   })
+
+  .directive('mapMarker', function () {
+  return {
+    restrict: 'E',
+    controller: 'MapMarkerCtrl'
+    }
+  })
+
   .run(function ($rootScope, $state) {
     $rootScope.$on("$stateChangeStart", function(event, toState, toParams){
       var requireLogin = toState.data.requireLogin;

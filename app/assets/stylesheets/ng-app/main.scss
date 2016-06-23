@@ -1,82 +1,157 @@
+@import 'https://fonts.googleapis.com/css?family=Arimo|Lato|Open+Sans|Roboto|Source+Sans+Pro';
 
-/*#map, figure {
-  height: 400px;
+body {
+/*  background-color: rgba(162, 205, 233, 0.53);
+*/}
+
+.navbar ul {
+  top: -14px;
+  left: 40px;
 }
 
-#map-container, figure {
-  height: 400px;
+.buffer {
+  padding: 0 40px 0 40px;
+  margin-bottom: -25px;
 }
 
-#photo-list {
-  height: 150px;
-}
-.custom-marker {
-  font-size: 2em;
-  padding: 10px;
-  background: #fff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  border: #7F7F7F solid 1px;
-  text-align: center;
-}
-
-.custom-marker:after {
-  content: '';
+.error {
+  color: red;
+  margin-bottom: 15px;
   position: absolute;
-  border-style: solid;
-  border-width: 7px 6px 0;
-  border-color: #fff transparent;
-  display: block;
-  width: 0;
-  z-index: 1;
-  margin-left: -6px;
-  bottom: -6px;
-  left: 50%;
 }
 
-.custom-marker:before {
-  content: '';
+#logo {
+  font-size: 24px;
+  font-family: "Helvetica Neue", HelveticaNeue, "Arimo", "Source Sans Pro", "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+  padding-left: 15px;
+}
+
+#search-block {
+  height: 110px;
+  border: none;
+/*  border-top: 1px solid #606469;
+  border-bottom: 1px solid #606469;*/
+  display: block;
+  min-width: 90%;
+  font-weight: 100;
+  font-size: 4.2em;
+  font-family: "Helvetica Neue", HelveticaNeue, "Arimo", "Source Sans Pro", "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+  border-color: #DCDCDC;
+  margin: .1em 0;
+  margin-left: 40px;
+  padding: .15em 0;
+}
+
+#button-block {
+  right: 30px;
+  display: block;
   position: absolute;
-  border-style: solid;
-  border-width: 7px 6px 0;
-  border-color: #7F7F7F transparent;
-  display: block;
-  width: 0;
-  z-index: 0;
-  margin-left: -6px;
-  bottom: -7px;
-  left: 50%;
+  margin-top: -95px;
 }
 
-#markerLayer img {
-  border: 2px solid red !important;
-  width: 85% !important;
-  height: 90% !important;
-  border-radius: 5px;
+.search-button {
+  color: #777;
+  background-color: #DCDCDC;
 }
 
-#markerLayer {
-  background-color: red;
+.search-button:hover {
+  color: #222;
+  background-color: #BBB;
+}
+
+#searchTags {
+  height: 65px;
+  width: 76%;
+}
+
+#searchTags:focus,
+#searchTagSubmit:focus,
+#searchImageSubmit:focus,
+#searchLocationSubmit:focus{
+  outline: none;
+}
+
+#searchTagSubmit,
+#searchImageSubmit,
+#searchLocationSubmit{
+  border-radius: 50%;
+  height: 50px; width: 50px;
+  border: none;
+  font-size: 20px;
+  margin-top: -20px;
+  right: 0px;
+  display: inline;
+}
+
+#and-search,
+#or-search{
+  border-radius: 50%;
+  height: 25px; width: 25px;
+  border: none;
+  font-size: 10px;
+  margin-top: -10px;
+  right: 0px;
+  display: inline;
+}
+
+/*#and-search{
+  border-radius: 50%;
+  height: 25px; width: 25px;
+  border: none;
+  font-size: 10px;
+  margin-top: -10px;
+  margin-right: 250px;
+  right: 0px;
+  display: inline;
   position: absolute;
-  display: block;
-  z-index: 100;
+}
+
+#or-search{
+  border-radius: 50%;
+  height: 25px; width: 25px;
+  border: none;
+  font-size: 10px;
+  margin-top: -10px;
+  right: 0px;
+  display: inline;
+  position: absolute;
 }
 */
+#relatedTags {
+  padding-left: 10px;
+}
 
+#tag-status {
+  color: #DCDCDC;
+}
+
+fieldset {
+  display: block;
+  -webkit-margin-start: 2px;
+  -webkit-margin-end: 2px;
+  -webkit-padding-before: 0.35em;
+  -webkit-padding-start: 0.75em;
+  -webkit-padding-end: 0.75em;
+  -webkit-padding-after: 0.625em;
+}
+
+input {
+  border: none;
+}
 
 figure {
-/*  position: absolute;*/
   top: 0;
   left: 0;
   margin: 0;
-  width: 100%;
-  height: 85vh;
+  width: 80%;
+  height: 60vh;
 }
+
 gmap {
   display: block;
   height: 100%;
 }
+
 map-marker {
   width: 30px;
   height: 30px;
@@ -89,11 +164,13 @@ map-marker {
   display: block;
   cursor: pointer;
   transition: all .3s;
-  border-bottom: 7px solid #fffaf0;
-  border-top: 2px solid #fffaf0;
-  border-left: 2px solid #fffaf0;
-  border-right: 2px solid #fffaf0;
+  border-bottom: 2px solid #DCDCDC;
+  border-top: 2px solid #DCDCDC;
+  border-left: 2px solid #DCDCDC;
+  border-right: 2px solid #DCDCDC;
+  border-radius: 5%;
 }
+
 map-marker.active {
   width: 200px;
   height: 200px;
@@ -101,15 +178,27 @@ map-marker.active {
   margin-left: -100px;
   background-size: 100%;
   z-index: 5;
-  border-bottom: 40px solid #fffaf0;
-  border-top: 8px solid #fffaf0;
-  border-left: 8px solid #fffaf0;
-  border-right: 8px solid #fffaf0;
+  border-bottom: 2px solid #DCDCDC;
+  border-top: 2px solid #DCDCDC;
+  border-left: 2px solid #DCDCDC;
+  border-right: 2px solid #DCDCDC;
+  border-radius: 5%;
 }
 
 map-marker, map-marker.active {
   background-size: 100%;
   box-shadow: 4px 4px 4px #888888;
+}
+
+#tags-list {
+  width:240px;
+  right: 40px;
+  height: 60vh;
+  border-radius: 5%;
+  overflow:auto;
+  background-color: #f8f8f8;
+  border: 3px solid #ccc;
+  position: absolute;
 }
 
 #username {
@@ -119,7 +208,6 @@ map-marker, map-marker.active {
 
 ul {
   bottom: -15px;
-  left: 45%;
   padding: 1em;
   display: block;
   position: absolute;
@@ -131,6 +219,57 @@ li {
   margin-bottom: .5em;
   cursor: pointer;
 }
+
 li:hover{
   color: #222;
+}
+
+.image-list {
+  position: relative;
+  display: inline-block;
+}
+
+.image-item, .image-list, .overlay {
+  width: 100px;
+  height: 100px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  color: #fff;
+  display: none;
+  z-index: 2;
+}
+
+.image-list .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #fff;
+}
+
+.image-list:hover .overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+}
+
+.image-username {
+  top: 5px;
+  left: 3px;
+}
+
+.image-caption, .image-username {
+  font-family: "Helvetica Neue", HelveticaNeue, "Arimo", "Source Sans Pro", "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
 }
