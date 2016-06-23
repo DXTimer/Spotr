@@ -4,15 +4,6 @@
       <input type="text" ng-model="searchParam" id="searchTags" placeholder="Enter a search by # or Location" autocomplete="off" autofocus>
 
       <div id="button-block" class="buffer">
-
-        <button class="search-button" id="or-search" alt="search by location" title="search by location" ng-click="setAndOr('or')">
-          <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
-
-        <button class="search-button" id="and-search" alt="search by location" title="search by location" ng-click="setAndOr('and')">
-          <i class="fa fa-times" aria-hidden="true"></i>
-        </button>
-
         <button class="search-button" id="searchTagSubmit" ng-click="getTags(searchParam)" alt="search by hashtag" title="search for related tags">
           <i class="fa fa-hashtag" aria-hidden="true"></i>
         </button>
@@ -24,7 +15,18 @@
         <button class="search-button" id="searchLocationSubmit" alt="search by location" title="search by location" ng-click="searchByLocation(searchParam)">
           <i class="fa fa-map-marker" aria-hidden="true"></i>
         </button>
+      </div>
 
+      <br>
+
+      <div id="bottom-button-block">
+         <button class="search-button" id="or-search" alt="search by location" title="search 'tag' or 'tag'" ng-click="setAndOr('or')">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+
+        <button class="search-button" id="and-search" alt="search by location" title="search 'tag' and 'tag'" ng-click="setAndOr('and')">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
       </div>
 
     </fieldset>
