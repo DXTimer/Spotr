@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Arimo|Lato|Open+Sans|Roboto|Source+Sans+Pro';
+@import 'https://fonts.googleapis.com/css?family=Arimo|Lato|Open+Sans|Roboto|Source+Sans+Pro|Lobster|Poiret+One';
 
 body {
 /*  background-color: rgba(162, 205, 233, 0.53);
@@ -211,27 +211,33 @@ li:hover{
 }
 
 #individual-image {
-  height: 300px;
-  width: 300px;
+  height: 98%;
+  width: 98%;
   padding-top: 10px;
 }
 
 #profile-image {
   height: 90px;
   width: 90px;
-  /*float: left;*/
+  float: left;
 }
 
-#image-text p {
+#image-text {
   padding-left: 100px;
   text-align: left;
 }
 
-.image-username {
+#image-username {
+  font-family: 'Lobster', Arial, sans-serif;
+  font-size: 20px;
   top: 5px;
   left: 3px;
 }
 
-.image-caption, .image-username {
-  font-family: "Helvetica Neue", HelveticaNeue, "Arimo", "Source Sans Pro", "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+#image-name {
+  font-family: 'Poiret One', Arial, sans-serif;
+}
+
+#image-caption, #image-location {
+  font-family: 'Poiret One', Arial, sans-serif;
 }

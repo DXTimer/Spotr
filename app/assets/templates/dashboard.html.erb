@@ -32,8 +32,7 @@
 
   <div class="buffer error">{{error}}</div>
 
-
-  <br><br>
+  <br>
 
   <div id="tags-list">
     <p id="relatedTags" ng-repeat='tag in tags' ng-click="saveTag(tag.name)">{{ tag.name }} ({{tag.media_count}})</p>
@@ -48,36 +47,22 @@
         ng-style="{'background-image':'url(' + location.url + ')'}"
         ng-mouseenter="location.isActive=true; optionsSet('true')"
         ng-mouseleave="location.isActive=false; optionsSet('false')">
-<!--         <div>
-          <span id="username" ng-show="options==='true'">{{location.name}}</span>
-          <span id="caption" ng-show="options==='true'">{{location.caption}}</span>
-        </div> -->
       </map-marker>
     </figure>
           <br><br>
           <button ng-click='tester()'>tester</button>
-          <!-- {{images}} -->
 
-      <!-- <div id='tags' class="buffer"> -->
-
-        <!-- <button ng-click='tester("51.4036535","-0.3493859")'>tester</button> -->
-
-       <br><br>
-
-<!--         <button ng-click="getImageByLocation()">loc button</button>
-        <button ng-click="searchTagsWithLocation('or')">tags or loc</button>
-        <button ng-click="searchTagsWithLocation('and')">tags and loc</button><br>
- -->
-        <br><br>
+       <br><br><br>
 
         <div class="container-fluid text-center">
           <div id="images" ng-repeat='image in images' class="col-sm-3">
             <div class="image-list">
               <img id='profile-image' src="{{ image.user.profile_picture }}">
               <div id='image-text'>
-                <p><strong>{{image.user.full_name}}</strong><br>
-                <em>{{image.user.username}}</em></p>
-                <p>{{image.caption.text}}</p>
+                <span id='image-username'><strong>{{image.user.full_name}}</strong></span><br>
+                <span id='image-name'>{{image.user.username}}</span><br>
+                <span id='image-location' >{{image.location.name}}</span><br>
+                <span id='image-caption' >{{image.caption.text}}</span>
               </div>
               <a href="{{image.link}}" target="_blank">
                 <img id='individual-image' src="{{ image.images.low_resolution.url }}">
@@ -85,36 +70,4 @@
             </div>
           </div>
         </div>
-
-<!--         <div class='col-md-4' id="image-grid" >
-
-          <span ng-repeat='image in images' class="image-list">
-            <img src="{{ image.images.thumbnail.url }}" class="image-item">
-            <div class="overlay">
-              <span class="image-username">{{image.user.username}}</span>
-              <br>
-              <span class="image-caption">{{image.caption.text}}
-            </div>
-          </span>
-
-          <span ng-repeat='image in images' class="image-list">
-            <img src="{{ image.images.thumbnail.url }}" class="image-item">
-            <div class="overlay">
-              <span class="image-username">{{image.user.username}}</span>
-              <br>
-              <span class="image-caption">{{image.caption.text}}
-            </div>
-          </span>
-
-          <span ng-repeat='image in images' class="image-list">
-            <img src="{{ image.images.thumbnail.url }}" class="image-item">
-            <div class="overlay">
-              <span class="image-username">{{image.user.username}}</span>
-              <br>
-              <span class="image-caption">{{image.caption.text}}
-            </div>
-          </span>
-        </div>
-
-      </div> -->
 </div>
