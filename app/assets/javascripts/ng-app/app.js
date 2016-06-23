@@ -13,7 +13,7 @@ var brimApp = angular
 
     $stateProvider
       .state('login', {
-          url: '/',
+          url: '/login',
           templateUrl: 'login.html',
           controller: 'AuthController',
           data: {
@@ -21,7 +21,7 @@ var brimApp = angular
           }
       })
       .state('dashboard', {
-          url: '/',
+          url: '/dashboard',
           templateUrl: 'dashboard.html',
           controller: 'DashboardController',
           data: {
@@ -29,7 +29,7 @@ var brimApp = angular
           }
       });
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/dashboard');
 
     $locationProvider.html5Mode(true);
 

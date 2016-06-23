@@ -20,20 +20,16 @@ brimApp.controller('AuthController', function($state, $interval, $http, $scope, 
         localStorage.setItem('username', JSON.stringify(jsonResponse.data.username));
         localStorage.setItem('id', JSON.stringify(jsonResponse.data.id));
         localStorage.setItem('token', JSON.stringify(jsonResponse.data.token));
-        $scope.logged_in = true;
+        $rootScope.logged_in = true;
         if(AuthService.isAuthenticated()) {
           console.log(SearchHistoryService.get())
           console.log(SearchHistoryService.post())
         }
         $interval.cancel(poll);
         popup.close();
+        return $state.go('dashboard');
       };
       }, 20)
   };
 
-  $scope.logOut = function logOut() {
-    console.log($scope.logged_in = false)
-    localStorage.clear();
-    return $state.go('/login');
-  }
 });
