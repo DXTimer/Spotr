@@ -1,11 +1,15 @@
 class Api::SearchesController < ApplicationController
+  before_action :set_user
 
   def index
-    render json: Search.all
+    if !!@user
+      render json: @user.searches.last.tags
+    else
+      render json: { error: "You are not allowed access to this page."}
+    end
   end
 
   def create
-    @user = User.find(search_params[:id])
     search = @user.searches.new()
     param_tags = search_params[:tags]
     tags = []
@@ -28,4 +32,7 @@ class Api::SearchesController < ApplicationController
     params.require(:search).permit(:id, :uid, :tags => [])
   end
 
+  def set_user
+    @user = User.find_by(id: params[:user_id])
+  end
 end

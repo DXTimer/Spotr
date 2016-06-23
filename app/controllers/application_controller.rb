@@ -5,25 +5,31 @@ class ApplicationController < ActionController::Base
   # before_action :authenticate_user!
 
   def index
+    
   end
 
-  #
-  # def authenticate_user!
-  #   unauthorized! unless current_user
-  # end
-  #
-  # def unauthorized!
-  #   head :unauthorized
-  # end
-  #
-  # def current_user
-  #   @current_user
-  # end
-  #
-  # def set_current_user
-  #   token = request.headers['Authorization'].to_s.split(' ').last
-  #   return unless token
-  #   payload = Token.new(token)
-  #   @current_user = User.find(payload.user_id) if payload.valid?
-  # end
+  def create
+    @user = User.find(search_params[:id])
+    search = @user.searches.new()
+    param_tags = search_params[:tags]
+    tags = []
+    param_tags.each do |tagname|
+      tags << Tag.where(tag_name: tagname).first_or_create
+    end
+    tags.each do |tag|
+      search.tags << tag
+    end
+    if search.save
+      render json: search, status: :ok
+    else
+      render json: {status: :unprocessable_entity}
+    end
+  end
+
+  private
+
+  def search_params
+    params.require(:search).permit(:id, :uid, :tags => [])
+  end
+
 end

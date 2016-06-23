@@ -15,4 +15,6 @@
 /node_modules
 
 # Ignore application configuration
+
+# Ignore application configuration
 /config/application.yml

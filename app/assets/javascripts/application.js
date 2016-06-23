@@ -21,3 +21,4 @@
 //= require angular-messages
 //= require_tree .
 //= require_tree ../templates
+//= require_tree ../images
