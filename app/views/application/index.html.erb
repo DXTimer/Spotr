@@ -4,12 +4,13 @@
       <a href="/" class="navbar-brand"><i class="icon ion-record"></i> Spotr </a>
       
     </ul>
-    <div class="logged-in">
-      <span ng-if="logged_in"><img class="media-object img-rounded" ng-src="{{profile_picture}}" id="current-user">
-          Hello @{{username}}!
-      </span>
-      <span class="logged-in"><a ng-if="logged_in" ng-click="logOut()" href="">Logout</a></span>
-    </div>
+    <ul class="nav navbar-nav pull-right logged-in">
+      <li ng-if="logged_in" id="current-user">
+        <img class="media-object img-rounded" id="user-picture" ng-src="{{profile_picture}}" >
+      </li>
+      <li id="hello-user" ng-if="logged_in"> Hello @{{username}}!</li>
+      <li class="logged-in"><a ng-if="logged_in" ng-click="logOut()" href="">Logout</a></li>
+    </ul>
   </div>
 </div>
 

@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20160614140136) do
     t.text     "token",                  default: "", null: false
     t.string   "provider",               default: "", null: false
     t.string   "uid",                    default: "", null: false
-    t.text     "profile_picture",        default: "", null: true
+    t.text     "profile_picture",        default: ""
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"

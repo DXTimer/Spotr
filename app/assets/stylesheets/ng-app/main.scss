@@ -6,24 +6,46 @@ body {
 
 .navbar ul {
   top: -14px;
-  left: 40px;
+  display: inline;
 }
 
 .logged-in {
   text-decoration: none;
   text-align: right;
   padding-left: 30px;
+  list-style: none;
+  list-style-type: none;
+  float: right;
+  right: 40px;
+  display: inline;
 }
 
 #current-user, 
 #current-user a {
-  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-decoration: none;
+  right: 40px;
+  display: inline;
 }
 
 #current-user:hover, 
 #current-user:hover a{
   text-decoration: none;
+}
+
+#hello-user {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+#user-picture {
+  height: 30px;
+  width: 30px;
+  right: 40px;
+  margin-left: 90%;
+  margin-top: -5px;
 }
 
 .navbar {
