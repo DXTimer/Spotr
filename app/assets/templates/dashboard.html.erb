@@ -1,18 +1,9 @@
 <div>
   <form>
     <fieldset id="search-block" class="buffer">
-      <input type="text" ng-model="searchParam" id="searchTags" placeholder="Enter something to search" autocomplete="off">
+      <input type="text" ng-model="searchParam" id="searchTags" placeholder="Enter a search by # or Location" autocomplete="off" autofocus>
 
       <div id="button-block" class="buffer">
-
-        <button class="search-button" id="or-search" alt="search by location" title="search by location" ng-click="setAndOr('or')">
-          <i class="fa fa-map-marker" aria-hidden="true"></i>
-        </button>
-
-        <button class="search-button" id="and-search" alt="search by location" title="search by location" ng-click="setAndOr('and')">
-          <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
-
         <button class="search-button" id="searchTagSubmit" ng-click="getTags(searchParam)" alt="search by hashtag" title="search for related tags">
           <i class="fa fa-hashtag" aria-hidden="true"></i>
         </button>
@@ -24,23 +15,30 @@
         <button class="search-button" id="searchLocationSubmit" alt="search by location" title="search by location" ng-click="searchByLocation(searchParam)">
           <i class="fa fa-map-marker" aria-hidden="true"></i>
         </button>
+      </div>
 
+      <br>
+
+      <div id="bottom-button-block">
+         <button class="search-button" id="or-search" alt="search by location" title="search 'tag' or 'tag'" ng-click="setAndOr('or')">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+
+        <button class="search-button" id="and-search" alt="search by location" title="search 'tag' and 'tag'" ng-click="setAndOr('and')">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
       </div>
 
     </fieldset>
   </form>
 
-  <div class="buffer error">{{error}}</div>
-  <span ng-repeat='chosenTag in chosenTags'>
-    <span id="chosenTags">{{ chosenTag }}  </span>
-    <span ng-click="removeTag(chosenTag)">X</span>
-  </span>
+  <div class="buffer error" ng-hide="error===false">{{error}}</div>
 
-  <br><br>
+  <br>
 
   <div id="tags-list">
-    <p id="relatedTags" ng-repeat='tag in tags' ng-click="saveTag(tag.name)">{{ tag.name }} ({{tag.media_count}})</p>
-    <p id="relatedTags" ng-repeat='address in addressList' ng-click="">{{ address.formatted_address }}</p>
+    <p id="relatedTags" ng-repeat='tag in tags' ng-click="saveTag(tag.name)">#{{ tag.name }} ({{tag.media_count | number}})</p>
+    <p id="relatedTags" ng-repeat='address in addressList' ng-click="getImageByLocation(address.geometry.location.lat,address.geometry.location.lng)">{{ address.formatted_address }}</p>
   </div>
 
     <figure class="buffer">
@@ -51,75 +49,27 @@
         ng-style="{'background-image':'url(' + location.url + ')'}"
         ng-mouseenter="location.isActive=true; optionsSet('true')"
         ng-mouseleave="location.isActive=false; optionsSet('false')">
-<!--         <div>
-          <span id="username" ng-show="options==='true'">{{location.name}}</span>
-          <span id="caption" ng-show="options==='true'">{{location.caption}}</span>
-        </div> -->
       </map-marker>
     </figure>
           <br><br>
           <button ng-click='tester()'>tester</button>
-          {{images}}
 
-      <div id='tags' class="buffer">
+       <br><br><br>
 
-        <!-- <button ng-click='tester("51.4036535","-0.3493859")'>tester</button> -->
-
-       <br><br>
-
-        <button ng-click="getImageByLocation()">loc button</button>
-        <button ng-click="searchTagsWithLocation('or')">tags or loc</button>
-        <button ng-click="searchTagsWithLocation('and')">tags and loc</button><br>
-
-        <br><br>
-        <div id="image-grid" data-masonry='{ "itemSelector": ".image-item", "columnWidth": 200 }'>
-
-          <div ng-repeat='image in images' class="image-list">
-            <img src="{{ image.images.thumbnail.url }}" class="image-item">
-            <div class="overlay">
-              <span class="image-username">{{image.user.username}}</span>
-              <br>
-              <span class="image-caption">{{image.caption.text}}
+        <div class="container-fluid text-center">
+          <div id="images" ng-repeat='image in images' class="col-sm-3">
+            <div class="image-list">
+              <img id='profile-image' src="{{ image.user.profile_picture }}">
+              <div id='image-text'>
+                <span id='image-username'><strong>{{image.user.full_name}}</strong></span><br>
+                <span id='image-name'>{{image.user.username}}</span><br>
+                <span id='image-location' >{{image.location.name}}</span><br>
+                <span id='image-caption' >{{image.caption.text}}</span>
+              </div>
+              <a href="{{image.link}}" target="_blank">
+                <img id='individual-image' src="{{ image.images.low_resolution.url }}">
+              </a>
             </div>
           </div>
-
-          <span ng-repeat='image in images' class="image-list" ng-mouseenter="location.isActive=true; optionsSet('true')"
-          ng-mouseleave="location.isActive=false; optionsSet('false')">
-            <img src="{{ image.images.low_resolution.url }}" class="image-item">
-            <div class="overlay">
-              <span class="image-username">{{image.user.username}}</span>
-              <br>
-              <span class="image-caption">{{image.caption.text}}
-            </div>
-          </span>
-
-          <span ng-repeat='image in images' class="image-list">
-            <img src="{{ image.images.thumbnail.url }}" class="image-item">
-            <div class="overlay">
-              <span class="image-username">{{image.user.username}}</span>
-              <br>
-              <span class="image-caption">{{image.caption.text}}
-            </div>
-          </span>
-
-          <span ng-repeat='image in images' class="image-list">
-            <img src="{{ image.images.thumbnail.url }}" class="image-item">
-            <div class="overlay">
-              <span class="image-username">{{image.user.username}}</span>
-              <br>
-              <span class="image-caption">{{image.caption.text}}
-            </div>
-          </span>
-
-          <span ng-repeat='image in images' class="image-list">
-            <img src="{{ image.images.thumbnail.url }}" class="image-item">
-            <div class="overlay">
-              <span class="image-username">{{image.user.username}}</span>
-              <br>
-              <span class="image-caption">{{image.caption.text}}
-            </div>
-          </span>
         </div>
-
-      </div>
 </div>
