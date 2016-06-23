@@ -2,9 +2,7 @@
 
 brimApp.service('GetImageByLocationService', ['$http', function($http) {
     var base = "https://api.instagram.com/v1";
-    var access_token = 'access_token=3414423759.9460433.24ba738c23824cbd82e82201dc10dc57';
-
-    self = this
+    var access_token = "&access_token=" + JSON.parse(localStorage.getItem('token'));
 
     return {
       'get': function(lat,lng) {

@@ -29,7 +29,7 @@ class Api::SearchesController < ApplicationController
   private
 
   def search_params
-    params.require(:search).permit(:id, :uid, :tags => [])
+    params.require(:search).permit(:id, :tags => [])
   end
 
   def set_user
