@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
     if obj
       obj.update(token: auth.credentials.token)
     else
-      create do |user|
+      obj = self.create do |user|
         user.uid = auth.uid
         user.provider = auth.provider 
         user.username = auth.info.nickname
