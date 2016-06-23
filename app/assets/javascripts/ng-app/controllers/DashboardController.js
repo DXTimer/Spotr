@@ -6,6 +6,8 @@ angular.module("brimApp")
   $scope.images = [];
   $scope.tags = [];
 
+  $scope.andOr = 'or'
+
   $scope.testdata = [];
 
   $scope.locations = [];
@@ -80,11 +82,11 @@ angular.module("brimApp")
   $scope.setAndOr = function(arg){
     if(arg==='or'){
       $scope.andOr='or';
-      $scope.searchParam = $scope.searchParam.replace(/,/g,'+');
+      $scope.searchParam = $scope.searchParam.replace(/\+/g,',');
     }
     if(arg==='and'){
       $scope.andOr='and';
-      $scope.searchParam = $scope.searchParam.replace(/\+/g,',');
+      $scope.searchParam = $scope.searchParam.replace(/,/g,'+');
     }
   }
 
@@ -167,15 +169,29 @@ angular.module("brimApp")
   }
 
   $scope.searchByTags = function(tag) {
-    $scope.images = [];
-    $scope.locations = [];
-    var tags = $scope.searchParam.split(",");
-    if(tags.length<2){
-      $scope.searchOneTag(tag);
+    if($scope.andOr==='or'){
+      $scope.images = [];
+      $scope.locations = [];
+      var tags = $scope.searchParam.split(",");
+      if(tags.length<2){
+        $scope.searchOneTag(tag);
+      }
+      else {
+        $scope.searchAllTags();
+      };
     }
-    else {
-      $scope.searchAllTags();
-    };
+    // if($scope.andOr==='and'){
+    //   console.log('herp')
+    //   $scope.images = [];
+    //   $scope.locations = [];
+    //   var tags = $scope.searchParam.split("+");
+    //   if(tags.length<2){
+    //     $scope.searchOneTag(tag);
+    //   }
+    //   else {
+    //     $scope.searchImagesWithEachTag();
+    //   };
+    // }
   }
 
   $scope.saveTag = function(tag) {
