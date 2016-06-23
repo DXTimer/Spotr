@@ -1,6 +1,7 @@
 brimApp.controller('AuthController', function($state, $interval, $http, $scope, $window, $location, $rootScope, $auth, $http, SearchHistoryService, AuthService) {
   var jsonResponse;
   var pollInterval;
+
   $scope.handlePopupAuthentication = function handlePopupAuthentication(network, account) {
     $scope.$apply(function() {
       $scope.applyNetwork(network, account);
@@ -19,6 +20,7 @@ brimApp.controller('AuthController', function($state, $interval, $http, $scope, 
         localStorage.setItem('username', JSON.stringify(jsonResponse.data.username));
         localStorage.setItem('id', JSON.stringify(jsonResponse.data.id));
         localStorage.setItem('token', JSON.stringify(jsonResponse.data.token));
+        $scope.logged_in = true;
         if(AuthService.isAuthenticated()) {
           console.log(SearchHistoryService.get())
           console.log(SearchHistoryService.post())
@@ -29,15 +31,8 @@ brimApp.controller('AuthController', function($state, $interval, $http, $scope, 
       }, 20)
   };
 
-  $scope.authenticate = function authenticate() {
-    if (typeof localStorage.getItem('username') === 'undefined') {
-      return false;
-    } else {
-      return true;
-    }
-  }
-
   $scope.logOut = function logOut() {
+    console.log($scope.logged_in = false)
     localStorage.clear();
     return $state.go('login');
   }
