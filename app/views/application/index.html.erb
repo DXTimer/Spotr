@@ -1,9 +1,15 @@
 <div class="navbar navbar-default navbar-static-top text-left">
-  <div class="container">
-    <ul class="nav navbar-nav" ng-controller="NavBarController">
-      <a href="/" class="navbar-brand"><i class="ion-images"></i> BrimApp</a>
+  <div class="container" ng-controller="NavBarController">
+    <ul class="nav navbar-nav">
+      <a href="/" class="navbar-brand"><i class="icon ion-record"></i> Spotr </a>
       <li><a ng-if="logged_in" ng-click="logOut()" href="">Logout</a></li>
+    </ul>
+    <ul style = "text-align:right;">
+      <li><a ng-if="logged_in"><img class="media-object img-rounded" ng-src="{{profile_picture}}">
+          Hello @{{username}}!
+        </a></li>
     </ul>
   </div>
 </div>
+
 <div ui-view></div>

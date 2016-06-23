@@ -6,4 +6,6 @@ brimApp.controller('NavBarController', function($state, $scope, $rootScope) {
       localStorage.clear();
       return $state.go('login');
    }
+   $scope.username = JSON.parse(localStorage.getItem('username'))
+   $scope.profile_picture = JSON.parse(localStorage.getItem('profile_picture'))
 });
