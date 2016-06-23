@@ -9,6 +9,27 @@ body {
   left: 40px;
 }
 
+.logged-in {
+  text-decoration: none;
+  text-align: right;
+  padding-left: 30px;
+}
+
+#current-user, 
+#current-user a {
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+#current-user:hover, 
+#current-user:hover a{
+  text-decoration: none;
+}
+
+.navbar {
+  text-decoration: none;
+}
+
 .buffer {
   padding: 0 40px 0 40px;
   margin-bottom: -25px;
@@ -48,6 +69,7 @@ body {
   display: block;
   position: absolute;
   margin-top: -105px;
+  z-index: 20;
 }
 
 #bottom-button-block {
@@ -55,8 +77,8 @@ body {
   display: block;
   position: absolute;
   margin-top: -65px;
+  z-index: 10;
 }
-
 
 .search-button {
   color: #777;
