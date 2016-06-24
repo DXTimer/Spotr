@@ -36,9 +36,7 @@ angular.module("brimApp")
       console.log(response)
       return response
     }).then(function(response){
-      response.forEach(function(array){
-        $scope.testdata.push(array)
-      })
+        $scope.testdata.push(response.data)
     });
   }
 
@@ -193,11 +191,8 @@ angular.module("brimApp")
     $scope.images = []
     $scope.locations = []
     GetImageByLocationService.get(lat,lng).then(function(response){
-      $scope.transferInfo(response.data)
-      $scope.images = response.data
-      response.forEach(function(object) {
-        $scope.testdata.push(object)
-      })
+      $scope.transferInfo(response.data.data)
+      $scope.images = response.data.data
     });
   };
 
