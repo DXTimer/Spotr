@@ -9,6 +9,10 @@ body {
   display: inline;
 }
 
+.spotr-logo {
+  padding-left: 40px;
+}
+
 .logged-in {
   text-decoration: none;
   text-align: right;
@@ -95,7 +99,7 @@ body {
 }
 
 #bottom-button-block {
-  right: 125px;
+  right: 115px;
   display: block;
   position: absolute;
   margin-top: -65px;
@@ -394,7 +398,7 @@ li:hover{
   
   15% {
     -webkit-transform:translateY(0);
-    padding-bottom: 5px;
+    padding-bottom: 3px;
   }
 
   30% {
@@ -403,7 +407,7 @@ li:hover{
 
   40% {
     -webkit-transform:translateY(0%);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
   }
 
   50% {
@@ -412,7 +416,7 @@ li:hover{
 
   70% {
     -webkit-transform:translateY(0%);
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     }
 
   80% {
@@ -421,7 +425,7 @@ li:hover{
 
   90% {
     -webkit-transform:translateY(0%);
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
 
   95% {
@@ -430,7 +434,7 @@ li:hover{
 
   97% {
     -webkit-transform:translateY(0%);
-    padding-bottom: 9px;
+    padding-bottom: 7px;
   }
 
   99% {
@@ -448,7 +452,7 @@ li:hover{
   
   15% {
     transform:translateY(0);
-    padding-bottom: 5px;
+    padding-bottom: 3px;
   }
 
   30% {
@@ -457,7 +461,7 @@ li:hover{
 
   40% {
     transform:translateY(0%);
-    padding-bottom: 6px;
+    padding-bottom: 4px;
   }
 
   50% {
@@ -466,7 +470,7 @@ li:hover{
 
   70% {
     transform:translateY(0%);
-    padding-bottom: 7px;
+    padding-bottom: 5px;
     }
 
   80% {
@@ -475,7 +479,7 @@ li:hover{
 
   90% {
     transform:translateY(0%);
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
 
   95% {
@@ -484,7 +488,7 @@ li:hover{
 
   97% {
     transform:translateY(0%);
-    padding-bottom: 9px;
+    padding-bottom: 7px;
   }
 
   99% {
