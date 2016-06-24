@@ -13,9 +13,6 @@ angular.module("brimApp")
   $scope.locations = [];
   $scope.searchParam = [];
 
-
-
-
   // Instagram Controller
 
   $scope.getResponseSuccess = function(scope, res, err) {

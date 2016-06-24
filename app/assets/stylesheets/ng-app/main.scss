@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Arimo|Lato|Open+Sans|Roboto|Source+Sans+Pro|Lobster|Poiret+One';
+@import 'https://fonts.googleapis.com/css?family=Arimo|Lato|Open+Sans|Roboto|Source+Sans+Pro|Permanent+Marker|Poiret+One|Dosis';
 
 body {
 /*  background-color: rgba(162, 205, 233, 0.53);
@@ -154,7 +154,8 @@ body {
 #relatedTags {
   padding-left: 10px;
   transition: all .2s ease-in-out;
-  font-family: 'Poiret One', Arial, sans-serif;
+  font-family: 'Dosis', Arial, sans-serif;
+  font-size: 14px;
 }
 
 #relatedTags:hover {
@@ -317,14 +318,21 @@ li:hover{
   -webkit-filter: grayscale(0%); 
 }
 
+.image-list:hover #profile-image {
+  transition: all .9s ease-in-out;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%); 
+}
+
 #image-text {
   padding-left: 100px;
   text-align: left;
 }
 
 #image-username {
-  font-family: 'Lobster', Arial, sans-serif;
-  font-size: 20px;
+  font-family: 'Permanent Marker', Arial, sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
   top: 5px;
   left: 3px;
 }
