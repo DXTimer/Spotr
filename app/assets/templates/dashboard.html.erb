@@ -62,13 +62,23 @@
               <img id='profile-image' src="{{ image.user.profile_picture }}">
               <div id='image-text'>
                 <span id='image-username'><strong>{{image.user.full_name}}</strong></span><br>
-                <span id='image-name'>{{image.user.username}}</span><br>
-                <span id='image-location' >{{image.location.name}}</span><br>
-                <span id='image-caption' >{{image.caption.text}}</span>
+                <span id='image-name'>
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  {{image.user.username}}
+                </span><br>
+                <span id='image-location' >
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  {{image.location.name}}
+                </span><br>
+                <span id='image-caption' >
+                  {{image.caption.text}}
+                </span>
               </div>
-              <a href="{{image.link}}" target="_blank">
-                <img id='individual-image' src="{{ image.images.low_resolution.url }}">
-              </a>
+              <div id='individual-image'>
+                <a href="{{image.link}}" target="_blank" >
+                  <img class='inner-image' src="{{ image.images.low_resolution.url }}">
+                </a>
+             </div>
             </div>
           </div>
         </div>
