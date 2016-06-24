@@ -1,5 +1,5 @@
 angular.module("brimApp")
-.controller('DashboardController', function($q, $rootScope, $scope, $element, locationFactory, NgMap, mapMarkerService, GetGeocodeService, GetTagsService, GetImagesByTagService, GetImageByLocationService, locationFactory) {
+.controller('DashboardController', function($rootScope, $scope, $element, locationFactory, NgMap, mapMarkerService, GetGeocodeService, GetTagsService, GetImagesByTagService, GetImageByLocationService, locationFactory) {
 
 
   $scope.chosenTags = [];
@@ -31,15 +31,29 @@ angular.module("brimApp")
     }
   };
 
+  $scope.tester = function(lat,lng) {
+    GetImageByLocationService.get(lat,lng).then(function(response) {
+      console.log(response)
+      return response
+    }).then(function(response){
+      response.forEach(function(array){
+        $scope.testdata.push(array)
+      })
+    });
+  }
+
   // $scope.tester = function(lat,lng) {
-  //   GetImageByLocationService.get(lat,lng).then(function(response) {
-  //     return response
-  //   }).then(function(response){
-  //     response.forEach(function(array){
-  //       $scope.testdata.push(array)
+  //   $scope.images = []
+  //   $scope.locations = []
+  //   GetImageByLocationService.get(lat,lng).then(function(response){
+  //     $scope.transferInfo(response.data)
+  //     $scope.images = response.data
+  //     response.forEach(function(object) {
+  //       $scope.testdata.push(object)
   //     })
   //   });
   // }
+
 
   $scope.setAndOr = function(arg){
     if(arg==='or'){
@@ -56,31 +70,6 @@ angular.module("brimApp")
     if(arg==='tag'){$scope.tagOrLocation = true}
     if(arg==='loc'){$scope.tagOrLocation = false}
   }
-
-  $scope.tester = function() {
-    $scope.images = [];
-    var storage = [];
-    var tags = $scope.searchParam.split("+")
-    console.log(tags)
-    GetImagesByTagService.get(tags[0]).then(function(response) {
-      $scope.getResponseSuccess($scope, response, "This hashtag has returned no results" )
-      response.data.forEach(function(image){
-        var tagctr = 0;
-        tags.forEach(function(tag) {
-          if(image.tags.includes(tag)){
-            tagctr++;
-          }
-        })
-        if(tagctr === tags.length) {
-          storage.push(image)
-        }
-      })
-      console.log(storage)
-    });
-      $scope.images = storage
-      $scope.transferInfo($scope.images)
-  }
-
 
   $scope.getTags = function(tagsearch) {
     $scope.error = null;
@@ -180,36 +169,7 @@ angular.module("brimApp")
     if($scope.searchParam[0]===','){$scope.searchParam=$scope.searchParam.slice(1,$scope.searchParam.length)}
   };
 
-  $scope.searchMultipleTags = function(arg) {
-    if(arg === 'or') {
-      var tags = $scope.searchParam.split(",");
-      tags.forEach(function(tag){
-        $scope.getImagesByTags(tag)
-      })
-    }
-    if(arg === 'and') {
-      $scope.images = []
-      GetImagesByTagService.get($scope.chosenTags[0]).then(function(response) {
-      $scope.getResponseSuccess($scope, response, "This hashtag has returned no results" )
-      response.data.forEach(function(image){
-        var tagctr = 0;
-        $scope.chosenTags.forEach(function(tag) {
-          if(image.tags.includes(tag)){
-            tagctr++;
-          }
-        })
-        if(tagctr === $scope.chosenTags.length) {
-          $scope.images.push(image)
-        }
-      })
-    });
-      $scope.transferInfo($scope.images)
-    }
-  };
-
   $scope.getImagesByTags = function(tag) {
-    // $scope.images = []
-    // $scope.locations = []
     GetImagesByTagService.get(tag).then(function(response) {
       $scope.getResponseSuccess($scope, response, "This hashtag has returned no results" )
       $scope.transferInfo(response.data)
