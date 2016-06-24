@@ -205,7 +205,28 @@ map-marker {
   border-left: 2px solid #DCDCDC;
   border-right: 2px solid #DCDCDC;
   border-radius: 2%;
+  -moz-animation-name: dropMarker;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 0.6s;
+
+  -webkit-animation-name: dropMarker;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.6s;
+
+  animation-name: dropMarker;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.6s;
+  // -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  //  -moz-animation: fadein 2s; /* Firefox < 16 */
+  //   -ms-animation: fadein 2s; /* Internet Explorer */
+  //    -o-animation: fadein 2s; /* Opera < 12.1 */
+  //       animation: fadein 2s;
 }
+
+
 
 map-marker.active {
   width: 200px;
@@ -230,7 +251,6 @@ map-marker, map-marker.active {
   width:19%;
   right: 40px;
   height: 60vh;
-  /*border-radius: 2.5%;*/
   overflow:auto;
   background-color: rgba(229,226,226,0.44);
   position: absolute;
@@ -311,5 +331,168 @@ li:hover{
 
 #image-caption, #image-location {
   font-family: 'Poiret One', Arial, sans-serif;
+}
+
+@-moz-keyframes dropMarker {
+  0% {
+    -moz-transform: translateY(-80px);
+  }
+  
+  15% {
+    -moz-transform:translateY(0);
+    padding-bottom: 5px;
+  }
+
+  30% {
+    -moz-transform:translateY(-50%);
+  }
+
+  40% {
+    -moz-transform:translateY(0%);
+    padding-bottom: 6px;
+  }
+
+  50% {
+    -moz-transform:translateY(-30%);
+  }
+
+  70% {
+    -moz-transform:translateY(0%);
+    padding-bottom: 7px;
+    }
+
+  80% {
+    -moz-transform:translateY(-15%);
+  }
+
+  90% {
+    -moz-transform:translateY(0%);
+    padding-bottom: 8px;
+  }
+
+  95% {
+    -moz-transform:translateY(-7%);
+  }
+
+  97% {
+    -moz-transform:translateY(0%);
+    padding-bottom: 9px;
+  }
+
+  99% {
+    -moz-transform:translateY(-3%);
+  }
+
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes dropMarker {
+  0% {
+    -webkit-transform: translateY(-80px);
+  }
+  
+  15% {
+    -webkit-transform:translateY(0);
+    padding-bottom: 5px;
+  }
+
+  30% {
+    -webkit-transform:translateY(-50%);
+  }
+
+  40% {
+    -webkit-transform:translateY(0%);
+    padding-bottom: 6px;
+  }
+
+  50% {
+    -webkit-transform:translateY(-30%);
+  }
+
+  70% {
+    -webkit-transform:translateY(0%);
+    padding-bottom: 7px;
+    }
+
+  80% {
+    -webkit-transform:translateY(-15%);
+  }
+
+  90% {
+    -webkit-transform:translateY(0%);
+    padding-bottom: 8px;
+  }
+
+  95% {
+    -webkit-transform:translateY(-7%);
+  }
+
+  97% {
+    -webkit-transform:translateY(0%);
+    padding-bottom: 9px;
+  }
+
+  99% {
+    -webkit-transform:translateY(-3%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes dropMarker {
+  0% {
+    transform: translateY(-80px);
+  }
+  
+  15% {
+    transform:translateY(0);
+    padding-bottom: 5px;
+  }
+
+  30% {
+    transform:translateY(-50%);
+  }
+
+  40% {
+    transform:translateY(0%);
+    padding-bottom: 6px;
+  }
+
+  50% {
+    transform:translateY(-30%);
+  }
+
+  70% {
+    transform:translateY(0%);
+    padding-bottom: 7px;
+    }
+
+  80% {
+    transform:translateY(-15%);
+  }
+
+  90% {
+    transform:translateY(0%);
+    padding-bottom: 8px;
+  }
+
+  95% {
+    transform:translateY(-7%);
+  }
+
+  97% {
+    transform:translateY(0%);
+    padding-bottom: 9px;
+  }
+
+  99% {
+    transform:translateY(-3%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
