@@ -1,0 +1,4416 @@
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+@import "https://fonts.googleapis.com/css?family=Arimo|Dosis";
+@import "https://fonts.googleapis.com/css?family=Arimo|Lato|Open+Sans|Roboto|Source+Sans+Pro|Permanent+Marker|Poiret+One|Dosis";
+/* line 4, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+.login-body {
+  background: rgba(245, 245, 245, 0);
+}
+
+/* line 8, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+#login-button-insta {
+  background: rgba(187, 194, 218, 0.3);
+  color: #e2e4ea;
+}
+
+/* line 13, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+#login-button-signup {
+  background: rgba(226, 228, 234, 0.6);
+  color: #333;
+  border: none;
+}
+
+/* line 19, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+#intro body {
+  margin: 0;
+  text-align: center;
+  background: #000;
+}
+
+/* line 24, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url(/images/homepage.jpg) no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+/* line 38, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+.stopfade {
+  opacity: .5;
+}
+
+/* line 41, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+#intro p {
+  text-align: center;
+}
+
+/* line 45, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+#intro {
+  font-family: 'Dosis', Arial Narrow, sans-serif;
+  font-weight: 100;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 2rem 1rem;
+  width: 33%;
+  margin: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+}
+
+/* line 59, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+}
+
+/* line 65, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+.homebutton {
+  text-align: center;
+  display: block-inline;
+  width: 60%;
+  padding: .4rem;
+  border: none;
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.23);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background;
+}
+
+/* line 80, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+.homebutton:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+  /* line 96, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+  div {
+    width: 70%;
+  }
+}
+@media screen and (max-device-width: 800px) {
+  /* line 99, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+  html {
+    background: url(/images/homepage.jpg) #000 no-repeat center center fixed;
+  }
+
+  /* line 100, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+  #bgvid {
+    display: none;
+  }
+}
+/* line 102, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+.footer-partial {
+  font-family: 'Dosis', Arial Narrow, sans-serif;
+  font-weight: 100;
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  /*margin:2rem;*/
+  font-size: 0.8rem;
+  display: inline;
+}
+
+/* line 115, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+.partial {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+/* line 120, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+.homeform {
+  text-align: center;
+  font-family: 'Dosis', Arial Narrow, sans-serif;
+  /*font-weight:100;
+  padding: 1rem;*/
+}
+
+/* line 127, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+.myButton {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+  background: -moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: -webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: -o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: -ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+  background-color: #ffffff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 4px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+/* line 153, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+.myButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+  background: -moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: -o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+  background-color: #f6f6f6;
+}
+
+/* line 163, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/homepage.scss */
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/*!
+  Ionicons, v2.0.0
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/benjsperry  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+
+  Android-style icons originally built by Google’s
+  Material Design Icons: https://github.com/google/material-design-icons
+  used under CC BY http://creativecommons.org/licenses/by/4.0/
+  Modified icons to fit ionicon’s grid from original.
+*/
+@font-face {
+  font-family: "Ionicons";
+  src: url("../fonts/ionicons.eot?v=2.0.0");
+  src: url("../fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("../fonts/ionicons.ttf?v=2.0.0") format("truetype"), url("../fonts/ionicons.woff?v=2.0.0") format("woff"), url("../fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 14, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion, .ionicons, .ion-alert:before, .ion-alert-circled:before, .ion-android-add:before, .ion-android-add-circle:before, .ion-android-alarm-clock:before, .ion-android-alert:before, .ion-android-apps:before, .ion-android-archive:before, .ion-android-arrow-back:before, .ion-android-arrow-down:before, .ion-android-arrow-dropdown:before, .ion-android-arrow-dropdown-circle:before, .ion-android-arrow-dropleft:before, .ion-android-arrow-dropleft-circle:before, .ion-android-arrow-dropright:before, .ion-android-arrow-dropright-circle:before, .ion-android-arrow-dropup:before, .ion-android-arrow-dropup-circle:before, .ion-android-arrow-forward:before, .ion-android-arrow-up:before, .ion-android-attach:before, .ion-android-bar:before, .ion-android-bicycle:before, .ion-android-boat:before, .ion-android-bookmark:before, .ion-android-bulb:before, .ion-android-bus:before, .ion-android-calendar:before, .ion-android-call:before, .ion-android-camera:before, .ion-android-cancel:before, .ion-android-car:before, .ion-android-cart:before, .ion-android-chat:before, .ion-android-checkbox:before, .ion-android-checkbox-blank:before, .ion-android-checkbox-outline:before, .ion-android-checkbox-outline-blank:before, .ion-android-checkmark-circle:before, .ion-android-clipboard:before, .ion-android-close:before, .ion-android-cloud:before, .ion-android-cloud-circle:before, .ion-android-cloud-done:before, .ion-android-cloud-outline:before, .ion-android-color-palette:before, .ion-android-compass:before, .ion-android-contact:before, .ion-android-contacts:before, .ion-android-contract:before, .ion-android-create:before, .ion-android-delete:before, .ion-android-desktop:before, .ion-android-document:before, .ion-android-done:before, .ion-android-done-all:before, .ion-android-download:before, .ion-android-drafts:before, .ion-android-exit:before, .ion-android-expand:before, .ion-android-favorite:before, .ion-android-favorite-outline:before, .ion-android-film:before, .ion-android-folder:before, .ion-android-folder-open:before, .ion-android-funnel:before, .ion-android-globe:before, .ion-android-hand:before, .ion-android-hangout:before, .ion-android-happy:before, .ion-android-home:before, .ion-android-image:before, .ion-android-laptop:before, .ion-android-list:before, .ion-android-locate:before, .ion-android-lock:before, .ion-android-mail:before, .ion-android-map:before, .ion-android-menu:before, .ion-android-microphone:before, .ion-android-microphone-off:before, .ion-android-more-horizontal:before, .ion-android-more-vertical:before, .ion-android-navigate:before, .ion-android-notifications:before, .ion-android-notifications-none:before, .ion-android-notifications-off:before, .ion-android-open:before, .ion-android-options:before, .ion-android-people:before, .ion-android-person:before, .ion-android-person-add:before, .ion-android-phone-landscape:before, .ion-android-phone-portrait:before, .ion-android-pin:before, .ion-android-plane:before, .ion-android-playstore:before, .ion-android-print:before, .ion-android-radio-button-off:before, .ion-android-radio-button-on:before, .ion-android-refresh:before, .ion-android-remove:before, .ion-android-remove-circle:before, .ion-android-restaurant:before, .ion-android-sad:before, .ion-android-search:before, .ion-android-send:before, .ion-android-settings:before, .ion-android-share:before, .ion-android-share-alt:before, .ion-android-star:before, .ion-android-star-half:before, .ion-android-star-outline:before, .ion-android-stopwatch:before, .ion-android-subway:before, .ion-android-sunny:before, .ion-android-sync:before, .ion-android-textsms:before, .ion-android-time:before, .ion-android-train:before, .ion-android-unlock:before, .ion-android-upload:before, .ion-android-volume-down:before, .ion-android-volume-mute:before, .ion-android-volume-off:before, .ion-android-volume-up:before, .ion-android-walk:before, .ion-android-warning:before, .ion-android-watch:before, .ion-android-wifi:before, .ion-aperture:before, .ion-archive:before, .ion-arrow-down-a:before, .ion-arrow-down-b:before, .ion-arrow-down-c:before, .ion-arrow-expand:before, .ion-arrow-graph-down-left:before, .ion-arrow-graph-down-right:before, .ion-arrow-graph-up-left:before, .ion-arrow-graph-up-right:before, .ion-arrow-left-a:before, .ion-arrow-left-b:before, .ion-arrow-left-c:before, .ion-arrow-move:before, .ion-arrow-resize:before, .ion-arrow-return-left:before, .ion-arrow-return-right:before, .ion-arrow-right-a:before, .ion-arrow-right-b:before, .ion-arrow-right-c:before, .ion-arrow-shrink:before, .ion-arrow-swap:before, .ion-arrow-up-a:before, .ion-arrow-up-b:before, .ion-arrow-up-c:before, .ion-asterisk:before, .ion-at:before, .ion-backspace:before, .ion-backspace-outline:before, .ion-bag:before, .ion-battery-charging:before, .ion-battery-empty:before, .ion-battery-full:before, .ion-battery-half:before, .ion-battery-low:before, .ion-beaker:before, .ion-beer:before, .ion-bluetooth:before, .ion-bonfire:before, .ion-bookmark:before, .ion-bowtie:before, .ion-briefcase:before, .ion-bug:before, .ion-calculator:before, .ion-calendar:before, .ion-camera:before, .ion-card:before, .ion-cash:before, .ion-chatbox:before, .ion-chatbox-working:before, .ion-chatboxes:before, .ion-chatbubble:before, .ion-chatbubble-working:before, .ion-chatbubbles:before, .ion-checkmark:before, .ion-checkmark-circled:before, .ion-checkmark-round:before, .ion-chevron-down:before, .ion-chevron-left:before, .ion-chevron-right:before, .ion-chevron-up:before, .ion-clipboard:before, .ion-clock:before, .ion-close:before, .ion-close-circled:before, .ion-close-round:before, .ion-closed-captioning:before, .ion-cloud:before, .ion-code:before, .ion-code-download:before, .ion-code-working:before, .ion-coffee:before, .ion-compass:before, .ion-compose:before, .ion-connection-bars:before, .ion-contrast:before, .ion-crop:before, .ion-cube:before, .ion-disc:before, .ion-document:before, .ion-document-text:before, .ion-drag:before, .ion-earth:before, .ion-easel:before, .ion-edit:before, .ion-egg:before, .ion-eject:before, .ion-email:before, .ion-email-unread:before, .ion-erlenmeyer-flask:before, .ion-erlenmeyer-flask-bubbles:before, .ion-eye:before, .ion-eye-disabled:before, .ion-female:before, .ion-filing:before, .ion-film-marker:before, .ion-fireball:before, .ion-flag:before, .ion-flame:before, .ion-flash:before, .ion-flash-off:before, .ion-folder:before, .ion-fork:before, .ion-fork-repo:before, .ion-forward:before, .ion-funnel:before, .ion-gear-a:before, .ion-gear-b:before, .ion-grid:before, .ion-hammer:before, .ion-happy:before, .ion-happy-outline:before, .ion-headphone:before, .ion-heart:before, .ion-heart-broken:before, .ion-help:before, .ion-help-buoy:before, .ion-help-circled:before, .ion-home:before, .ion-icecream:before, .ion-image:before, .ion-images:before, .ion-information:before, .ion-information-circled:before, .ion-ionic:before, .ion-ios-alarm:before, .ion-ios-alarm-outline:before, .ion-ios-albums:before, .ion-ios-albums-outline:before, .ion-ios-americanfootball:before, .ion-ios-americanfootball-outline:before, .ion-ios-analytics:before, .ion-ios-analytics-outline:before, .ion-ios-arrow-back:before, .ion-ios-arrow-down:before, .ion-ios-arrow-forward:before, .ion-ios-arrow-left:before, .ion-ios-arrow-right:before, .ion-ios-arrow-thin-down:before, .ion-ios-arrow-thin-left:before, .ion-ios-arrow-thin-right:before, .ion-ios-arrow-thin-up:before, .ion-ios-arrow-up:before, .ion-ios-at:before, .ion-ios-at-outline:before, .ion-ios-barcode:before, .ion-ios-barcode-outline:before, .ion-ios-baseball:before, .ion-ios-baseball-outline:before, .ion-ios-basketball:before, .ion-ios-basketball-outline:before, .ion-ios-bell:before, .ion-ios-bell-outline:before, .ion-ios-body:before, .ion-ios-body-outline:before, .ion-ios-bolt:before, .ion-ios-bolt-outline:before, .ion-ios-book:before, .ion-ios-book-outline:before, .ion-ios-bookmarks:before, .ion-ios-bookmarks-outline:before, .ion-ios-box:before, .ion-ios-box-outline:before, .ion-ios-briefcase:before, .ion-ios-briefcase-outline:before, .ion-ios-browsers:before, .ion-ios-browsers-outline:before, .ion-ios-calculator:before, .ion-ios-calculator-outline:before, .ion-ios-calendar:before, .ion-ios-calendar-outline:before, .ion-ios-camera:before, .ion-ios-camera-outline:before, .ion-ios-cart:before, .ion-ios-cart-outline:before, .ion-ios-chatboxes:before, .ion-ios-chatboxes-outline:before, .ion-ios-chatbubble:before, .ion-ios-chatbubble-outline:before, .ion-ios-checkmark:before, .ion-ios-checkmark-empty:before, .ion-ios-checkmark-outline:before, .ion-ios-circle-filled:before, .ion-ios-circle-outline:before, .ion-ios-clock:before, .ion-ios-clock-outline:before, .ion-ios-close:before, .ion-ios-close-empty:before, .ion-ios-close-outline:before, .ion-ios-cloud:before, .ion-ios-cloud-download:before, .ion-ios-cloud-download-outline:before, .ion-ios-cloud-outline:before, .ion-ios-cloud-upload:before, .ion-ios-cloud-upload-outline:before, .ion-ios-cloudy:before, .ion-ios-cloudy-night:before, .ion-ios-cloudy-night-outline:before, .ion-ios-cloudy-outline:before, .ion-ios-cog:before, .ion-ios-cog-outline:before, .ion-ios-color-filter:before, .ion-ios-color-filter-outline:before, .ion-ios-color-wand:before, .ion-ios-color-wand-outline:before, .ion-ios-compose:before, .ion-ios-compose-outline:before, .ion-ios-contact:before, .ion-ios-contact-outline:before, .ion-ios-copy:before, .ion-ios-copy-outline:before, .ion-ios-crop:before, .ion-ios-crop-strong:before, .ion-ios-download:before, .ion-ios-download-outline:before, .ion-ios-drag:before, .ion-ios-email:before, .ion-ios-email-outline:before, .ion-ios-eye:before, .ion-ios-eye-outline:before, .ion-ios-fastforward:before, .ion-ios-fastforward-outline:before, .ion-ios-filing:before, .ion-ios-filing-outline:before, .ion-ios-film:before, .ion-ios-film-outline:before, .ion-ios-flag:before, .ion-ios-flag-outline:before, .ion-ios-flame:before, .ion-ios-flame-outline:before, .ion-ios-flask:before, .ion-ios-flask-outline:before, .ion-ios-flower:before, .ion-ios-flower-outline:before, .ion-ios-folder:before, .ion-ios-folder-outline:before, .ion-ios-football:before, .ion-ios-football-outline:before, .ion-ios-game-controller-a:before, .ion-ios-game-controller-a-outline:before, .ion-ios-game-controller-b:before, .ion-ios-game-controller-b-outline:before, .ion-ios-gear:before, .ion-ios-gear-outline:before, .ion-ios-glasses:before, .ion-ios-glasses-outline:before, .ion-ios-grid-view:before, .ion-ios-grid-view-outline:before, .ion-ios-heart:before, .ion-ios-heart-outline:before, .ion-ios-help:before, .ion-ios-help-empty:before, .ion-ios-help-outline:before, .ion-ios-home:before, .ion-ios-home-outline:before, .ion-ios-infinite:before, .ion-ios-infinite-outline:before, .ion-ios-information:before, .ion-ios-information-empty:before, .ion-ios-information-outline:before, .ion-ios-ionic-outline:before, .ion-ios-keypad:before, .ion-ios-keypad-outline:before, .ion-ios-lightbulb:before, .ion-ios-lightbulb-outline:before, .ion-ios-list:before, .ion-ios-list-outline:before, .ion-ios-location:before, .ion-ios-location-outline:before, .ion-ios-locked:before, .ion-ios-locked-outline:before, .ion-ios-loop:before, .ion-ios-loop-strong:before, .ion-ios-medical:before, .ion-ios-medical-outline:before, .ion-ios-medkit:before, .ion-ios-medkit-outline:before, .ion-ios-mic:before, .ion-ios-mic-off:before, .ion-ios-mic-outline:before, .ion-ios-minus:before, .ion-ios-minus-empty:before, .ion-ios-minus-outline:before, .ion-ios-monitor:before, .ion-ios-monitor-outline:before, .ion-ios-moon:before, .ion-ios-moon-outline:before, .ion-ios-more:before, .ion-ios-more-outline:before, .ion-ios-musical-note:before, .ion-ios-musical-notes:before, .ion-ios-navigate:before, .ion-ios-navigate-outline:before, .ion-ios-nutrition:before, .ion-ios-nutrition-outline:before, .ion-ios-paper:before, .ion-ios-paper-outline:before, .ion-ios-paperplane:before, .ion-ios-paperplane-outline:before, .ion-ios-partlysunny:before, .ion-ios-partlysunny-outline:before, .ion-ios-pause:before, .ion-ios-pause-outline:before, .ion-ios-paw:before, .ion-ios-paw-outline:before, .ion-ios-people:before, .ion-ios-people-outline:before, .ion-ios-person:before, .ion-ios-person-outline:before, .ion-ios-personadd:before, .ion-ios-personadd-outline:before, .ion-ios-photos:before, .ion-ios-photos-outline:before, .ion-ios-pie:before, .ion-ios-pie-outline:before, .ion-ios-pint:before, .ion-ios-pint-outline:before, .ion-ios-play:before, .ion-ios-play-outline:before, .ion-ios-plus:before, .ion-ios-plus-empty:before, .ion-ios-plus-outline:before, .ion-ios-pricetag:before, .ion-ios-pricetag-outline:before, .ion-ios-pricetags:before, .ion-ios-pricetags-outline:before, .ion-ios-printer:before, .ion-ios-printer-outline:before, .ion-ios-pulse:before, .ion-ios-pulse-strong:before, .ion-ios-rainy:before, .ion-ios-rainy-outline:before, .ion-ios-recording:before, .ion-ios-recording-outline:before, .ion-ios-redo:before, .ion-ios-redo-outline:before, .ion-ios-refresh:before, .ion-ios-refresh-empty:before, .ion-ios-refresh-outline:before, .ion-ios-reload:before, .ion-ios-reverse-camera:before, .ion-ios-reverse-camera-outline:before, .ion-ios-rewind:before, .ion-ios-rewind-outline:before, .ion-ios-rose:before, .ion-ios-rose-outline:before, .ion-ios-search:before, .ion-ios-search-strong:before, .ion-ios-settings:before, .ion-ios-settings-strong:before, .ion-ios-shuffle:before, .ion-ios-shuffle-strong:before, .ion-ios-skipbackward:before, .ion-ios-skipbackward-outline:before, .ion-ios-skipforward:before, .ion-ios-skipforward-outline:before, .ion-ios-snowy:before, .ion-ios-speedometer:before, .ion-ios-speedometer-outline:before, .ion-ios-star:before, .ion-ios-star-half:before, .ion-ios-star-outline:before, .ion-ios-stopwatch:before, .ion-ios-stopwatch-outline:before, .ion-ios-sunny:before, .ion-ios-sunny-outline:before, .ion-ios-telephone:before, .ion-ios-telephone-outline:before, .ion-ios-tennisball:before, .ion-ios-tennisball-outline:before, .ion-ios-thunderstorm:before, .ion-ios-thunderstorm-outline:before, .ion-ios-time:before, .ion-ios-time-outline:before, .ion-ios-timer:before, .ion-ios-timer-outline:before, .ion-ios-toggle:before, .ion-ios-toggle-outline:before, .ion-ios-trash:before, .ion-ios-trash-outline:before, .ion-ios-undo:before, .ion-ios-undo-outline:before, .ion-ios-unlocked:before, .ion-ios-unlocked-outline:before, .ion-ios-upload:before, .ion-ios-upload-outline:before, .ion-ios-videocam:before, .ion-ios-videocam-outline:before, .ion-ios-volume-high:before, .ion-ios-volume-low:before, .ion-ios-wineglass:before, .ion-ios-wineglass-outline:before, .ion-ios-world:before, .ion-ios-world-outline:before, .ion-ipad:before, .ion-iphone:before, .ion-ipod:before, .ion-jet:before, .ion-key:before, .ion-knife:before, .ion-laptop:before, .ion-leaf:before, .ion-levels:before, .ion-lightbulb:before, .ion-link:before, .ion-load-a:before, .ion-load-b:before, .ion-load-c:before, .ion-load-d:before, .ion-location:before, .ion-lock-combination:before, .ion-locked:before, .ion-log-in:before, .ion-log-out:before, .ion-loop:before, .ion-magnet:before, .ion-male:before, .ion-man:before, .ion-map:before, .ion-medkit:before, .ion-merge:before, .ion-mic-a:before, .ion-mic-b:before, .ion-mic-c:before, .ion-minus:before, .ion-minus-circled:before, .ion-minus-round:before, .ion-model-s:before, .ion-monitor:before, .ion-more:before, .ion-mouse:before, .ion-music-note:before, .ion-navicon:before, .ion-navicon-round:before, .ion-navigate:before, .ion-network:before, .ion-no-smoking:before, .ion-nuclear:before, .ion-outlet:before, .ion-paintbrush:before, .ion-paintbucket:before, .ion-paper-airplane:before, .ion-paperclip:before, .ion-pause:before, .ion-person:before, .ion-person-add:before, .ion-person-stalker:before, .ion-pie-graph:before, .ion-pin:before, .ion-pinpoint:before, .ion-pizza:before, .ion-plane:before, .ion-planet:before, .ion-play:before, .ion-playstation:before, .ion-plus:before, .ion-plus-circled:before, .ion-plus-round:before, .ion-podium:before, .ion-pound:before, .ion-power:before, .ion-pricetag:before, .ion-pricetags:before, .ion-printer:before, .ion-pull-request:before, .ion-qr-scanner:before, .ion-quote:before, .ion-radio-waves:before, .ion-record:before, .ion-refresh:before, .ion-reply:before, .ion-reply-all:before, .ion-ribbon-a:before, .ion-ribbon-b:before, .ion-sad:before, .ion-sad-outline:before, .ion-scissors:before, .ion-search:before, .ion-settings:before, .ion-share:before, .ion-shuffle:before, .ion-skip-backward:before, .ion-skip-forward:before, .ion-social-android:before, .ion-social-android-outline:before, .ion-social-angular:before, .ion-social-angular-outline:before, .ion-social-apple:before, .ion-social-apple-outline:before, .ion-social-bitcoin:before, .ion-social-bitcoin-outline:before, .ion-social-buffer:before, .ion-social-buffer-outline:before, .ion-social-chrome:before, .ion-social-chrome-outline:before, .ion-social-codepen:before, .ion-social-codepen-outline:before, .ion-social-css3:before, .ion-social-css3-outline:before, .ion-social-designernews:before, .ion-social-designernews-outline:before, .ion-social-dribbble:before, .ion-social-dribbble-outline:before, .ion-social-dropbox:before, .ion-social-dropbox-outline:before, .ion-social-euro:before, .ion-social-euro-outline:before, .ion-social-facebook:before, .ion-social-facebook-outline:before, .ion-social-foursquare:before, .ion-social-foursquare-outline:before, .ion-social-freebsd-devil:before, .ion-social-github:before, .ion-social-github-outline:before, .ion-social-google:before, .ion-social-google-outline:before, .ion-social-googleplus:before, .ion-social-googleplus-outline:before, .ion-social-hackernews:before, .ion-social-hackernews-outline:before, .ion-social-html5:before, .ion-social-html5-outline:before, .ion-social-instagram:before, .ion-social-instagram-outline:before, .ion-social-javascript:before, .ion-social-javascript-outline:before, .ion-social-linkedin:before, .ion-social-linkedin-outline:before, .ion-social-markdown:before, .ion-social-nodejs:before, .ion-social-octocat:before, .ion-social-pinterest:before, .ion-social-pinterest-outline:before, .ion-social-python:before, .ion-social-reddit:before, .ion-social-reddit-outline:before, .ion-social-rss:before, .ion-social-rss-outline:before, .ion-social-sass:before, .ion-social-skype:before, .ion-social-skype-outline:before, .ion-social-snapchat:before, .ion-social-snapchat-outline:before, .ion-social-tumblr:before, .ion-social-tumblr-outline:before, .ion-social-tux:before, .ion-social-twitch:before, .ion-social-twitch-outline:before, .ion-social-twitter:before, .ion-social-twitter-outline:before, .ion-social-usd:before, .ion-social-usd-outline:before, .ion-social-vimeo:before, .ion-social-vimeo-outline:before, .ion-social-whatsapp:before, .ion-social-whatsapp-outline:before, .ion-social-windows:before, .ion-social-windows-outline:before, .ion-social-wordpress:before, .ion-social-wordpress-outline:before, .ion-social-yahoo:before, .ion-social-yahoo-outline:before, .ion-social-yen:before, .ion-social-yen-outline:before, .ion-social-youtube:before, .ion-social-youtube-outline:before, .ion-soup-can:before, .ion-soup-can-outline:before, .ion-speakerphone:before, .ion-speedometer:before, .ion-spoon:before, .ion-star:before, .ion-stats-bars:before, .ion-steam:before, .ion-stop:before, .ion-thermometer:before, .ion-thumbsdown:before, .ion-thumbsup:before, .ion-toggle:before, .ion-toggle-filled:before, .ion-transgender:before, .ion-trash-a:before, .ion-trash-b:before, .ion-trophy:before, .ion-tshirt:before, .ion-tshirt-outline:before, .ion-umbrella:before, .ion-university:before, .ion-unlocked:before, .ion-upload:before, .ion-usb:before, .ion-videocamera:before, .ion-volume-high:before, .ion-volume-low:before, .ion-volume-medium:before, .ion-volume-mute:before, .ion-wand:before, .ion-waterdrop:before, .ion-wifi:before, .ion-wineglass:before, .ion-woman:before, .ion-wrench:before, .ion-xbox:before {
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 16, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-alert:before {
+  content: "\f101";
+}
+
+/* line 18, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-alert-circled:before {
+  content: "\f100";
+}
+
+/* line 20, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-add:before {
+  content: "\f2c7";
+}
+
+/* line 22, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-add-circle:before {
+  content: "\f359";
+}
+
+/* line 24, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-alarm-clock:before {
+  content: "\f35a";
+}
+
+/* line 26, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-alert:before {
+  content: "\f35b";
+}
+
+/* line 28, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-apps:before {
+  content: "\f35c";
+}
+
+/* line 30, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-archive:before {
+  content: "\f2c9";
+}
+
+/* line 32, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-back:before {
+  content: "\f2ca";
+}
+
+/* line 34, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-down:before {
+  content: "\f35d";
+}
+
+/* line 36, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-dropdown:before {
+  content: "\f35f";
+}
+
+/* line 38, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-dropdown-circle:before {
+  content: "\f35e";
+}
+
+/* line 40, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-dropleft:before {
+  content: "\f361";
+}
+
+/* line 42, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-dropleft-circle:before {
+  content: "\f360";
+}
+
+/* line 44, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-dropright:before {
+  content: "\f363";
+}
+
+/* line 46, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-dropright-circle:before {
+  content: "\f362";
+}
+
+/* line 48, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-dropup:before {
+  content: "\f365";
+}
+
+/* line 50, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-dropup-circle:before {
+  content: "\f364";
+}
+
+/* line 52, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-forward:before {
+  content: "\f30f";
+}
+
+/* line 54, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-arrow-up:before {
+  content: "\f366";
+}
+
+/* line 56, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-attach:before {
+  content: "\f367";
+}
+
+/* line 58, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-bar:before {
+  content: "\f368";
+}
+
+/* line 60, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-bicycle:before {
+  content: "\f369";
+}
+
+/* line 62, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-boat:before {
+  content: "\f36a";
+}
+
+/* line 64, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-bookmark:before {
+  content: "\f36b";
+}
+
+/* line 66, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-bulb:before {
+  content: "\f36c";
+}
+
+/* line 68, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-bus:before {
+  content: "\f36d";
+}
+
+/* line 70, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-calendar:before {
+  content: "\f2d1";
+}
+
+/* line 72, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-call:before {
+  content: "\f2d2";
+}
+
+/* line 74, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-camera:before {
+  content: "\f2d3";
+}
+
+/* line 76, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-cancel:before {
+  content: "\f36e";
+}
+
+/* line 78, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-car:before {
+  content: "\f36f";
+}
+
+/* line 80, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-cart:before {
+  content: "\f370";
+}
+
+/* line 82, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-chat:before {
+  content: "\f2d4";
+}
+
+/* line 84, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-checkbox:before {
+  content: "\f374";
+}
+
+/* line 86, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-checkbox-blank:before {
+  content: "\f371";
+}
+
+/* line 88, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-checkbox-outline:before {
+  content: "\f373";
+}
+
+/* line 90, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-checkbox-outline-blank:before {
+  content: "\f372";
+}
+
+/* line 92, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-checkmark-circle:before {
+  content: "\f375";
+}
+
+/* line 94, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-clipboard:before {
+  content: "\f376";
+}
+
+/* line 96, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-close:before {
+  content: "\f2d7";
+}
+
+/* line 98, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-cloud:before {
+  content: "\f37a";
+}
+
+/* line 100, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-cloud-circle:before {
+  content: "\f377";
+}
+
+/* line 102, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-cloud-done:before {
+  content: "\f378";
+}
+
+/* line 104, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-cloud-outline:before {
+  content: "\f379";
+}
+
+/* line 106, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-color-palette:before {
+  content: "\f37b";
+}
+
+/* line 108, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-compass:before {
+  content: "\f37c";
+}
+
+/* line 110, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-contact:before {
+  content: "\f2d8";
+}
+
+/* line 112, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-contacts:before {
+  content: "\f2d9";
+}
+
+/* line 114, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-contract:before {
+  content: "\f37d";
+}
+
+/* line 116, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-create:before {
+  content: "\f37e";
+}
+
+/* line 118, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-delete:before {
+  content: "\f37f";
+}
+
+/* line 120, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-desktop:before {
+  content: "\f380";
+}
+
+/* line 122, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-document:before {
+  content: "\f381";
+}
+
+/* line 124, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-done:before {
+  content: "\f383";
+}
+
+/* line 126, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-done-all:before {
+  content: "\f382";
+}
+
+/* line 128, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-download:before {
+  content: "\f2dd";
+}
+
+/* line 130, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-drafts:before {
+  content: "\f384";
+}
+
+/* line 132, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-exit:before {
+  content: "\f385";
+}
+
+/* line 134, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-expand:before {
+  content: "\f386";
+}
+
+/* line 136, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-favorite:before {
+  content: "\f388";
+}
+
+/* line 138, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-favorite-outline:before {
+  content: "\f387";
+}
+
+/* line 140, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-film:before {
+  content: "\f389";
+}
+
+/* line 142, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-folder:before {
+  content: "\f2e0";
+}
+
+/* line 144, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-folder-open:before {
+  content: "\f38a";
+}
+
+/* line 146, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-funnel:before {
+  content: "\f38b";
+}
+
+/* line 148, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-globe:before {
+  content: "\f38c";
+}
+
+/* line 150, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-hand:before {
+  content: "\f2e3";
+}
+
+/* line 152, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-hangout:before {
+  content: "\f38d";
+}
+
+/* line 154, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-happy:before {
+  content: "\f38e";
+}
+
+/* line 156, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-home:before {
+  content: "\f38f";
+}
+
+/* line 158, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-image:before {
+  content: "\f2e4";
+}
+
+/* line 160, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-laptop:before {
+  content: "\f390";
+}
+
+/* line 162, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-list:before {
+  content: "\f391";
+}
+
+/* line 164, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-locate:before {
+  content: "\f2e9";
+}
+
+/* line 166, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-lock:before {
+  content: "\f392";
+}
+
+/* line 168, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-mail:before {
+  content: "\f2eb";
+}
+
+/* line 170, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-map:before {
+  content: "\f393";
+}
+
+/* line 172, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-menu:before {
+  content: "\f394";
+}
+
+/* line 174, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-microphone:before {
+  content: "\f2ec";
+}
+
+/* line 176, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-microphone-off:before {
+  content: "\f395";
+}
+
+/* line 178, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-more-horizontal:before {
+  content: "\f396";
+}
+
+/* line 180, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-more-vertical:before {
+  content: "\f397";
+}
+
+/* line 182, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-navigate:before {
+  content: "\f398";
+}
+
+/* line 184, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-notifications:before {
+  content: "\f39b";
+}
+
+/* line 186, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-notifications-none:before {
+  content: "\f399";
+}
+
+/* line 188, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-notifications-off:before {
+  content: "\f39a";
+}
+
+/* line 190, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-open:before {
+  content: "\f39c";
+}
+
+/* line 192, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-options:before {
+  content: "\f39d";
+}
+
+/* line 194, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-people:before {
+  content: "\f39e";
+}
+
+/* line 196, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-person:before {
+  content: "\f3a0";
+}
+
+/* line 198, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-person-add:before {
+  content: "\f39f";
+}
+
+/* line 200, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-phone-landscape:before {
+  content: "\f3a1";
+}
+
+/* line 202, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-phone-portrait:before {
+  content: "\f3a2";
+}
+
+/* line 204, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-pin:before {
+  content: "\f3a3";
+}
+
+/* line 206, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-plane:before {
+  content: "\f3a4";
+}
+
+/* line 208, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-playstore:before {
+  content: "\f2f0";
+}
+
+/* line 210, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-print:before {
+  content: "\f3a5";
+}
+
+/* line 212, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-radio-button-off:before {
+  content: "\f3a6";
+}
+
+/* line 214, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-radio-button-on:before {
+  content: "\f3a7";
+}
+
+/* line 216, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-refresh:before {
+  content: "\f3a8";
+}
+
+/* line 218, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-remove:before {
+  content: "\f2f4";
+}
+
+/* line 220, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-remove-circle:before {
+  content: "\f3a9";
+}
+
+/* line 222, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-restaurant:before {
+  content: "\f3aa";
+}
+
+/* line 224, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-sad:before {
+  content: "\f3ab";
+}
+
+/* line 226, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-search:before {
+  content: "\f2f5";
+}
+
+/* line 228, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-send:before {
+  content: "\f2f6";
+}
+
+/* line 230, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-settings:before {
+  content: "\f2f7";
+}
+
+/* line 232, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-share:before {
+  content: "\f2f8";
+}
+
+/* line 234, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-share-alt:before {
+  content: "\f3ac";
+}
+
+/* line 236, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-star:before {
+  content: "\f2fc";
+}
+
+/* line 238, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-star-half:before {
+  content: "\f3ad";
+}
+
+/* line 240, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-star-outline:before {
+  content: "\f3ae";
+}
+
+/* line 242, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-stopwatch:before {
+  content: "\f2fd";
+}
+
+/* line 244, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-subway:before {
+  content: "\f3af";
+}
+
+/* line 246, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-sunny:before {
+  content: "\f3b0";
+}
+
+/* line 248, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-sync:before {
+  content: "\f3b1";
+}
+
+/* line 250, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-textsms:before {
+  content: "\f3b2";
+}
+
+/* line 252, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-time:before {
+  content: "\f3b3";
+}
+
+/* line 254, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-train:before {
+  content: "\f3b4";
+}
+
+/* line 256, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-unlock:before {
+  content: "\f3b5";
+}
+
+/* line 258, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-upload:before {
+  content: "\f3b6";
+}
+
+/* line 260, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-volume-down:before {
+  content: "\f3b7";
+}
+
+/* line 262, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-volume-mute:before {
+  content: "\f3b8";
+}
+
+/* line 264, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-volume-off:before {
+  content: "\f3b9";
+}
+
+/* line 266, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-volume-up:before {
+  content: "\f3ba";
+}
+
+/* line 268, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-walk:before {
+  content: "\f3bb";
+}
+
+/* line 270, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-warning:before {
+  content: "\f3bc";
+}
+
+/* line 272, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-watch:before {
+  content: "\f3bd";
+}
+
+/* line 274, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-android-wifi:before {
+  content: "\f305";
+}
+
+/* line 276, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-aperture:before {
+  content: "\f313";
+}
+
+/* line 278, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-archive:before {
+  content: "\f102";
+}
+
+/* line 280, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-down-a:before {
+  content: "\f103";
+}
+
+/* line 282, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-down-b:before {
+  content: "\f104";
+}
+
+/* line 284, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-down-c:before {
+  content: "\f105";
+}
+
+/* line 286, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-expand:before {
+  content: "\f25e";
+}
+
+/* line 288, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-graph-down-left:before {
+  content: "\f25f";
+}
+
+/* line 290, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-graph-down-right:before {
+  content: "\f260";
+}
+
+/* line 292, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-graph-up-left:before {
+  content: "\f261";
+}
+
+/* line 294, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-graph-up-right:before {
+  content: "\f262";
+}
+
+/* line 296, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-left-a:before {
+  content: "\f106";
+}
+
+/* line 298, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-left-b:before {
+  content: "\f107";
+}
+
+/* line 300, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-left-c:before {
+  content: "\f108";
+}
+
+/* line 302, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-move:before {
+  content: "\f263";
+}
+
+/* line 304, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-resize:before {
+  content: "\f264";
+}
+
+/* line 306, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-return-left:before {
+  content: "\f265";
+}
+
+/* line 308, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-return-right:before {
+  content: "\f266";
+}
+
+/* line 310, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-right-a:before {
+  content: "\f109";
+}
+
+/* line 312, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-right-b:before {
+  content: "\f10a";
+}
+
+/* line 314, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-right-c:before {
+  content: "\f10b";
+}
+
+/* line 316, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-shrink:before {
+  content: "\f267";
+}
+
+/* line 318, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-swap:before {
+  content: "\f268";
+}
+
+/* line 320, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-up-a:before {
+  content: "\f10c";
+}
+
+/* line 322, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-up-b:before {
+  content: "\f10d";
+}
+
+/* line 324, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-arrow-up-c:before {
+  content: "\f10e";
+}
+
+/* line 326, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-asterisk:before {
+  content: "\f314";
+}
+
+/* line 328, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-at:before {
+  content: "\f10f";
+}
+
+/* line 330, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-backspace:before {
+  content: "\f3bf";
+}
+
+/* line 332, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-backspace-outline:before {
+  content: "\f3be";
+}
+
+/* line 334, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-bag:before {
+  content: "\f110";
+}
+
+/* line 336, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-battery-charging:before {
+  content: "\f111";
+}
+
+/* line 338, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-battery-empty:before {
+  content: "\f112";
+}
+
+/* line 340, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-battery-full:before {
+  content: "\f113";
+}
+
+/* line 342, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-battery-half:before {
+  content: "\f114";
+}
+
+/* line 344, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-battery-low:before {
+  content: "\f115";
+}
+
+/* line 346, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-beaker:before {
+  content: "\f269";
+}
+
+/* line 348, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-beer:before {
+  content: "\f26a";
+}
+
+/* line 350, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-bluetooth:before {
+  content: "\f116";
+}
+
+/* line 352, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-bonfire:before {
+  content: "\f315";
+}
+
+/* line 354, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-bookmark:before {
+  content: "\f26b";
+}
+
+/* line 356, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-bowtie:before {
+  content: "\f3c0";
+}
+
+/* line 358, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-briefcase:before {
+  content: "\f26c";
+}
+
+/* line 360, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-bug:before {
+  content: "\f2be";
+}
+
+/* line 362, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-calculator:before {
+  content: "\f26d";
+}
+
+/* line 364, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-calendar:before {
+  content: "\f117";
+}
+
+/* line 366, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-camera:before {
+  content: "\f118";
+}
+
+/* line 368, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-card:before {
+  content: "\f119";
+}
+
+/* line 370, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-cash:before {
+  content: "\f316";
+}
+
+/* line 372, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-chatbox:before {
+  content: "\f11b";
+}
+
+/* line 374, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-chatbox-working:before {
+  content: "\f11a";
+}
+
+/* line 376, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-chatboxes:before {
+  content: "\f11c";
+}
+
+/* line 378, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-chatbubble:before {
+  content: "\f11e";
+}
+
+/* line 380, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-chatbubble-working:before {
+  content: "\f11d";
+}
+
+/* line 382, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-chatbubbles:before {
+  content: "\f11f";
+}
+
+/* line 384, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-checkmark:before {
+  content: "\f122";
+}
+
+/* line 386, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-checkmark-circled:before {
+  content: "\f120";
+}
+
+/* line 388, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-checkmark-round:before {
+  content: "\f121";
+}
+
+/* line 390, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-chevron-down:before {
+  content: "\f123";
+}
+
+/* line 392, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-chevron-left:before {
+  content: "\f124";
+}
+
+/* line 394, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-chevron-right:before {
+  content: "\f125";
+}
+
+/* line 396, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-chevron-up:before {
+  content: "\f126";
+}
+
+/* line 398, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-clipboard:before {
+  content: "\f127";
+}
+
+/* line 400, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-clock:before {
+  content: "\f26e";
+}
+
+/* line 402, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-close:before {
+  content: "\f12a";
+}
+
+/* line 404, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-close-circled:before {
+  content: "\f128";
+}
+
+/* line 406, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-close-round:before {
+  content: "\f129";
+}
+
+/* line 408, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-closed-captioning:before {
+  content: "\f317";
+}
+
+/* line 410, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-cloud:before {
+  content: "\f12b";
+}
+
+/* line 412, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-code:before {
+  content: "\f271";
+}
+
+/* line 414, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-code-download:before {
+  content: "\f26f";
+}
+
+/* line 416, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-code-working:before {
+  content: "\f270";
+}
+
+/* line 418, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-coffee:before {
+  content: "\f272";
+}
+
+/* line 420, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-compass:before {
+  content: "\f273";
+}
+
+/* line 422, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-compose:before {
+  content: "\f12c";
+}
+
+/* line 424, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-connection-bars:before {
+  content: "\f274";
+}
+
+/* line 426, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-contrast:before {
+  content: "\f275";
+}
+
+/* line 428, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-crop:before {
+  content: "\f3c1";
+}
+
+/* line 430, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-cube:before {
+  content: "\f318";
+}
+
+/* line 432, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-disc:before {
+  content: "\f12d";
+}
+
+/* line 434, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-document:before {
+  content: "\f12f";
+}
+
+/* line 436, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-document-text:before {
+  content: "\f12e";
+}
+
+/* line 438, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-drag:before {
+  content: "\f130";
+}
+
+/* line 440, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-earth:before {
+  content: "\f276";
+}
+
+/* line 442, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-easel:before {
+  content: "\f3c2";
+}
+
+/* line 444, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-edit:before {
+  content: "\f2bf";
+}
+
+/* line 446, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-egg:before {
+  content: "\f277";
+}
+
+/* line 448, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-eject:before {
+  content: "\f131";
+}
+
+/* line 450, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-email:before {
+  content: "\f132";
+}
+
+/* line 452, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-email-unread:before {
+  content: "\f3c3";
+}
+
+/* line 454, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-erlenmeyer-flask:before {
+  content: "\f3c5";
+}
+
+/* line 456, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-erlenmeyer-flask-bubbles:before {
+  content: "\f3c4";
+}
+
+/* line 458, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-eye:before {
+  content: "\f133";
+}
+
+/* line 460, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-eye-disabled:before {
+  content: "\f306";
+}
+
+/* line 462, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-female:before {
+  content: "\f278";
+}
+
+/* line 464, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-filing:before {
+  content: "\f134";
+}
+
+/* line 466, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-film-marker:before {
+  content: "\f135";
+}
+
+/* line 468, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-fireball:before {
+  content: "\f319";
+}
+
+/* line 470, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-flag:before {
+  content: "\f279";
+}
+
+/* line 472, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-flame:before {
+  content: "\f31a";
+}
+
+/* line 474, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-flash:before {
+  content: "\f137";
+}
+
+/* line 476, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-flash-off:before {
+  content: "\f136";
+}
+
+/* line 478, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-folder:before {
+  content: "\f139";
+}
+
+/* line 480, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-fork:before {
+  content: "\f27a";
+}
+
+/* line 482, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-fork-repo:before {
+  content: "\f2c0";
+}
+
+/* line 484, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-forward:before {
+  content: "\f13a";
+}
+
+/* line 486, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-funnel:before {
+  content: "\f31b";
+}
+
+/* line 488, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-gear-a:before {
+  content: "\f13d";
+}
+
+/* line 490, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-gear-b:before {
+  content: "\f13e";
+}
+
+/* line 492, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-grid:before {
+  content: "\f13f";
+}
+
+/* line 494, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-hammer:before {
+  content: "\f27b";
+}
+
+/* line 496, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-happy:before {
+  content: "\f31c";
+}
+
+/* line 498, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-happy-outline:before {
+  content: "\f3c6";
+}
+
+/* line 500, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-headphone:before {
+  content: "\f140";
+}
+
+/* line 502, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-heart:before {
+  content: "\f141";
+}
+
+/* line 504, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-heart-broken:before {
+  content: "\f31d";
+}
+
+/* line 506, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-help:before {
+  content: "\f143";
+}
+
+/* line 508, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-help-buoy:before {
+  content: "\f27c";
+}
+
+/* line 510, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-help-circled:before {
+  content: "\f142";
+}
+
+/* line 512, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-home:before {
+  content: "\f144";
+}
+
+/* line 514, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-icecream:before {
+  content: "\f27d";
+}
+
+/* line 516, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-image:before {
+  content: "\f147";
+}
+
+/* line 518, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-images:before {
+  content: "\f148";
+}
+
+/* line 520, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-information:before {
+  content: "\f14a";
+}
+
+/* line 522, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-information-circled:before {
+  content: "\f149";
+}
+
+/* line 524, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ionic:before {
+  content: "\f14b";
+}
+
+/* line 526, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-alarm:before {
+  content: "\f3c8";
+}
+
+/* line 528, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-alarm-outline:before {
+  content: "\f3c7";
+}
+
+/* line 530, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-albums:before {
+  content: "\f3ca";
+}
+
+/* line 532, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-albums-outline:before {
+  content: "\f3c9";
+}
+
+/* line 534, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-americanfootball:before {
+  content: "\f3cc";
+}
+
+/* line 536, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-americanfootball-outline:before {
+  content: "\f3cb";
+}
+
+/* line 538, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-analytics:before {
+  content: "\f3ce";
+}
+
+/* line 540, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-analytics-outline:before {
+  content: "\f3cd";
+}
+
+/* line 542, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-arrow-back:before {
+  content: "\f3cf";
+}
+
+/* line 544, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-arrow-down:before {
+  content: "\f3d0";
+}
+
+/* line 546, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-arrow-forward:before {
+  content: "\f3d1";
+}
+
+/* line 548, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-arrow-left:before {
+  content: "\f3d2";
+}
+
+/* line 550, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-arrow-right:before {
+  content: "\f3d3";
+}
+
+/* line 552, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-arrow-thin-down:before {
+  content: "\f3d4";
+}
+
+/* line 554, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-arrow-thin-left:before {
+  content: "\f3d5";
+}
+
+/* line 556, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-arrow-thin-right:before {
+  content: "\f3d6";
+}
+
+/* line 558, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-arrow-thin-up:before {
+  content: "\f3d7";
+}
+
+/* line 560, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-arrow-up:before {
+  content: "\f3d8";
+}
+
+/* line 562, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-at:before {
+  content: "\f3da";
+}
+
+/* line 564, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-at-outline:before {
+  content: "\f3d9";
+}
+
+/* line 566, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-barcode:before {
+  content: "\f3dc";
+}
+
+/* line 568, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-barcode-outline:before {
+  content: "\f3db";
+}
+
+/* line 570, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-baseball:before {
+  content: "\f3de";
+}
+
+/* line 572, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-baseball-outline:before {
+  content: "\f3dd";
+}
+
+/* line 574, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-basketball:before {
+  content: "\f3e0";
+}
+
+/* line 576, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-basketball-outline:before {
+  content: "\f3df";
+}
+
+/* line 578, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-bell:before {
+  content: "\f3e2";
+}
+
+/* line 580, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-bell-outline:before {
+  content: "\f3e1";
+}
+
+/* line 582, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-body:before {
+  content: "\f3e4";
+}
+
+/* line 584, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-body-outline:before {
+  content: "\f3e3";
+}
+
+/* line 586, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-bolt:before {
+  content: "\f3e6";
+}
+
+/* line 588, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-bolt-outline:before {
+  content: "\f3e5";
+}
+
+/* line 590, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-book:before {
+  content: "\f3e8";
+}
+
+/* line 592, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-book-outline:before {
+  content: "\f3e7";
+}
+
+/* line 594, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-bookmarks:before {
+  content: "\f3ea";
+}
+
+/* line 596, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-bookmarks-outline:before {
+  content: "\f3e9";
+}
+
+/* line 598, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-box:before {
+  content: "\f3ec";
+}
+
+/* line 600, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-box-outline:before {
+  content: "\f3eb";
+}
+
+/* line 602, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-briefcase:before {
+  content: "\f3ee";
+}
+
+/* line 604, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-briefcase-outline:before {
+  content: "\f3ed";
+}
+
+/* line 606, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-browsers:before {
+  content: "\f3f0";
+}
+
+/* line 608, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-browsers-outline:before {
+  content: "\f3ef";
+}
+
+/* line 610, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-calculator:before {
+  content: "\f3f2";
+}
+
+/* line 612, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-calculator-outline:before {
+  content: "\f3f1";
+}
+
+/* line 614, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-calendar:before {
+  content: "\f3f4";
+}
+
+/* line 616, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-calendar-outline:before {
+  content: "\f3f3";
+}
+
+/* line 618, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-camera:before {
+  content: "\f3f6";
+}
+
+/* line 620, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-camera-outline:before {
+  content: "\f3f5";
+}
+
+/* line 622, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cart:before {
+  content: "\f3f8";
+}
+
+/* line 624, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cart-outline:before {
+  content: "\f3f7";
+}
+
+/* line 626, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-chatboxes:before {
+  content: "\f3fa";
+}
+
+/* line 628, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-chatboxes-outline:before {
+  content: "\f3f9";
+}
+
+/* line 630, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-chatbubble:before {
+  content: "\f3fc";
+}
+
+/* line 632, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-chatbubble-outline:before {
+  content: "\f3fb";
+}
+
+/* line 634, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-checkmark:before {
+  content: "\f3ff";
+}
+
+/* line 636, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-checkmark-empty:before {
+  content: "\f3fd";
+}
+
+/* line 638, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-checkmark-outline:before {
+  content: "\f3fe";
+}
+
+/* line 640, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-circle-filled:before {
+  content: "\f400";
+}
+
+/* line 642, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-circle-outline:before {
+  content: "\f401";
+}
+
+/* line 644, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-clock:before {
+  content: "\f403";
+}
+
+/* line 646, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-clock-outline:before {
+  content: "\f402";
+}
+
+/* line 648, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-close:before {
+  content: "\f406";
+}
+
+/* line 650, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-close-empty:before {
+  content: "\f404";
+}
+
+/* line 652, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-close-outline:before {
+  content: "\f405";
+}
+
+/* line 654, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cloud:before {
+  content: "\f40c";
+}
+
+/* line 656, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cloud-download:before {
+  content: "\f408";
+}
+
+/* line 658, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cloud-download-outline:before {
+  content: "\f407";
+}
+
+/* line 660, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cloud-outline:before {
+  content: "\f409";
+}
+
+/* line 662, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cloud-upload:before {
+  content: "\f40b";
+}
+
+/* line 664, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cloud-upload-outline:before {
+  content: "\f40a";
+}
+
+/* line 666, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cloudy:before {
+  content: "\f410";
+}
+
+/* line 668, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cloudy-night:before {
+  content: "\f40e";
+}
+
+/* line 670, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cloudy-night-outline:before {
+  content: "\f40d";
+}
+
+/* line 672, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cloudy-outline:before {
+  content: "\f40f";
+}
+
+/* line 674, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cog:before {
+  content: "\f412";
+}
+
+/* line 676, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-cog-outline:before {
+  content: "\f411";
+}
+
+/* line 678, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-color-filter:before {
+  content: "\f414";
+}
+
+/* line 680, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-color-filter-outline:before {
+  content: "\f413";
+}
+
+/* line 682, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-color-wand:before {
+  content: "\f416";
+}
+
+/* line 684, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-color-wand-outline:before {
+  content: "\f415";
+}
+
+/* line 686, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-compose:before {
+  content: "\f418";
+}
+
+/* line 688, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-compose-outline:before {
+  content: "\f417";
+}
+
+/* line 690, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-contact:before {
+  content: "\f41a";
+}
+
+/* line 692, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-contact-outline:before {
+  content: "\f419";
+}
+
+/* line 694, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-copy:before {
+  content: "\f41c";
+}
+
+/* line 696, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-copy-outline:before {
+  content: "\f41b";
+}
+
+/* line 698, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-crop:before {
+  content: "\f41e";
+}
+
+/* line 700, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-crop-strong:before {
+  content: "\f41d";
+}
+
+/* line 702, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-download:before {
+  content: "\f420";
+}
+
+/* line 704, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-download-outline:before {
+  content: "\f41f";
+}
+
+/* line 706, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-drag:before {
+  content: "\f421";
+}
+
+/* line 708, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-email:before {
+  content: "\f423";
+}
+
+/* line 710, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-email-outline:before {
+  content: "\f422";
+}
+
+/* line 712, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-eye:before {
+  content: "\f425";
+}
+
+/* line 714, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-eye-outline:before {
+  content: "\f424";
+}
+
+/* line 716, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-fastforward:before {
+  content: "\f427";
+}
+
+/* line 718, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-fastforward-outline:before {
+  content: "\f426";
+}
+
+/* line 720, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-filing:before {
+  content: "\f429";
+}
+
+/* line 722, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-filing-outline:before {
+  content: "\f428";
+}
+
+/* line 724, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-film:before {
+  content: "\f42b";
+}
+
+/* line 726, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-film-outline:before {
+  content: "\f42a";
+}
+
+/* line 728, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-flag:before {
+  content: "\f42d";
+}
+
+/* line 730, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-flag-outline:before {
+  content: "\f42c";
+}
+
+/* line 732, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-flame:before {
+  content: "\f42f";
+}
+
+/* line 734, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-flame-outline:before {
+  content: "\f42e";
+}
+
+/* line 736, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-flask:before {
+  content: "\f431";
+}
+
+/* line 738, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-flask-outline:before {
+  content: "\f430";
+}
+
+/* line 740, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-flower:before {
+  content: "\f433";
+}
+
+/* line 742, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-flower-outline:before {
+  content: "\f432";
+}
+
+/* line 744, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-folder:before {
+  content: "\f435";
+}
+
+/* line 746, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-folder-outline:before {
+  content: "\f434";
+}
+
+/* line 748, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-football:before {
+  content: "\f437";
+}
+
+/* line 750, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-football-outline:before {
+  content: "\f436";
+}
+
+/* line 752, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-game-controller-a:before {
+  content: "\f439";
+}
+
+/* line 754, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-game-controller-a-outline:before {
+  content: "\f438";
+}
+
+/* line 756, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-game-controller-b:before {
+  content: "\f43b";
+}
+
+/* line 758, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-game-controller-b-outline:before {
+  content: "\f43a";
+}
+
+/* line 760, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-gear:before {
+  content: "\f43d";
+}
+
+/* line 762, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-gear-outline:before {
+  content: "\f43c";
+}
+
+/* line 764, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-glasses:before {
+  content: "\f43f";
+}
+
+/* line 766, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-glasses-outline:before {
+  content: "\f43e";
+}
+
+/* line 768, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-grid-view:before {
+  content: "\f441";
+}
+
+/* line 770, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-grid-view-outline:before {
+  content: "\f440";
+}
+
+/* line 772, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-heart:before {
+  content: "\f443";
+}
+
+/* line 774, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-heart-outline:before {
+  content: "\f442";
+}
+
+/* line 776, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-help:before {
+  content: "\f446";
+}
+
+/* line 778, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-help-empty:before {
+  content: "\f444";
+}
+
+/* line 780, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-help-outline:before {
+  content: "\f445";
+}
+
+/* line 782, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-home:before {
+  content: "\f448";
+}
+
+/* line 784, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-home-outline:before {
+  content: "\f447";
+}
+
+/* line 786, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-infinite:before {
+  content: "\f44a";
+}
+
+/* line 788, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-infinite-outline:before {
+  content: "\f449";
+}
+
+/* line 790, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-information:before {
+  content: "\f44d";
+}
+
+/* line 792, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-information-empty:before {
+  content: "\f44b";
+}
+
+/* line 794, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-information-outline:before {
+  content: "\f44c";
+}
+
+/* line 796, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-ionic-outline:before {
+  content: "\f44e";
+}
+
+/* line 798, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-keypad:before {
+  content: "\f450";
+}
+
+/* line 800, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-keypad-outline:before {
+  content: "\f44f";
+}
+
+/* line 802, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-lightbulb:before {
+  content: "\f452";
+}
+
+/* line 804, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-lightbulb-outline:before {
+  content: "\f451";
+}
+
+/* line 806, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-list:before {
+  content: "\f454";
+}
+
+/* line 808, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-list-outline:before {
+  content: "\f453";
+}
+
+/* line 810, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-location:before {
+  content: "\f456";
+}
+
+/* line 812, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-location-outline:before {
+  content: "\f455";
+}
+
+/* line 814, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-locked:before {
+  content: "\f458";
+}
+
+/* line 816, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-locked-outline:before {
+  content: "\f457";
+}
+
+/* line 818, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-loop:before {
+  content: "\f45a";
+}
+
+/* line 820, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-loop-strong:before {
+  content: "\f459";
+}
+
+/* line 822, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-medical:before {
+  content: "\f45c";
+}
+
+/* line 824, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-medical-outline:before {
+  content: "\f45b";
+}
+
+/* line 826, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-medkit:before {
+  content: "\f45e";
+}
+
+/* line 828, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-medkit-outline:before {
+  content: "\f45d";
+}
+
+/* line 830, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-mic:before {
+  content: "\f461";
+}
+
+/* line 832, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-mic-off:before {
+  content: "\f45f";
+}
+
+/* line 834, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-mic-outline:before {
+  content: "\f460";
+}
+
+/* line 836, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-minus:before {
+  content: "\f464";
+}
+
+/* line 838, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-minus-empty:before {
+  content: "\f462";
+}
+
+/* line 840, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-minus-outline:before {
+  content: "\f463";
+}
+
+/* line 842, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-monitor:before {
+  content: "\f466";
+}
+
+/* line 844, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-monitor-outline:before {
+  content: "\f465";
+}
+
+/* line 846, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-moon:before {
+  content: "\f468";
+}
+
+/* line 848, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-moon-outline:before {
+  content: "\f467";
+}
+
+/* line 850, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-more:before {
+  content: "\f46a";
+}
+
+/* line 852, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-more-outline:before {
+  content: "\f469";
+}
+
+/* line 854, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-musical-note:before {
+  content: "\f46b";
+}
+
+/* line 856, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-musical-notes:before {
+  content: "\f46c";
+}
+
+/* line 858, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-navigate:before {
+  content: "\f46e";
+}
+
+/* line 860, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-navigate-outline:before {
+  content: "\f46d";
+}
+
+/* line 862, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-nutrition:before {
+  content: "\f470";
+}
+
+/* line 864, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-nutrition-outline:before {
+  content: "\f46f";
+}
+
+/* line 866, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-paper:before {
+  content: "\f472";
+}
+
+/* line 868, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-paper-outline:before {
+  content: "\f471";
+}
+
+/* line 870, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-paperplane:before {
+  content: "\f474";
+}
+
+/* line 872, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-paperplane-outline:before {
+  content: "\f473";
+}
+
+/* line 874, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-partlysunny:before {
+  content: "\f476";
+}
+
+/* line 876, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-partlysunny-outline:before {
+  content: "\f475";
+}
+
+/* line 878, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pause:before {
+  content: "\f478";
+}
+
+/* line 880, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pause-outline:before {
+  content: "\f477";
+}
+
+/* line 882, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-paw:before {
+  content: "\f47a";
+}
+
+/* line 884, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-paw-outline:before {
+  content: "\f479";
+}
+
+/* line 886, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-people:before {
+  content: "\f47c";
+}
+
+/* line 888, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-people-outline:before {
+  content: "\f47b";
+}
+
+/* line 890, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-person:before {
+  content: "\f47e";
+}
+
+/* line 892, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-person-outline:before {
+  content: "\f47d";
+}
+
+/* line 894, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-personadd:before {
+  content: "\f480";
+}
+
+/* line 896, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-personadd-outline:before {
+  content: "\f47f";
+}
+
+/* line 898, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-photos:before {
+  content: "\f482";
+}
+
+/* line 900, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-photos-outline:before {
+  content: "\f481";
+}
+
+/* line 902, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pie:before {
+  content: "\f484";
+}
+
+/* line 904, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pie-outline:before {
+  content: "\f483";
+}
+
+/* line 906, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pint:before {
+  content: "\f486";
+}
+
+/* line 908, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pint-outline:before {
+  content: "\f485";
+}
+
+/* line 910, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-play:before {
+  content: "\f488";
+}
+
+/* line 912, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-play-outline:before {
+  content: "\f487";
+}
+
+/* line 914, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-plus:before {
+  content: "\f48b";
+}
+
+/* line 916, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-plus-empty:before {
+  content: "\f489";
+}
+
+/* line 918, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-plus-outline:before {
+  content: "\f48a";
+}
+
+/* line 920, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pricetag:before {
+  content: "\f48d";
+}
+
+/* line 922, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pricetag-outline:before {
+  content: "\f48c";
+}
+
+/* line 924, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pricetags:before {
+  content: "\f48f";
+}
+
+/* line 926, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pricetags-outline:before {
+  content: "\f48e";
+}
+
+/* line 928, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-printer:before {
+  content: "\f491";
+}
+
+/* line 930, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-printer-outline:before {
+  content: "\f490";
+}
+
+/* line 932, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pulse:before {
+  content: "\f493";
+}
+
+/* line 934, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-pulse-strong:before {
+  content: "\f492";
+}
+
+/* line 936, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-rainy:before {
+  content: "\f495";
+}
+
+/* line 938, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-rainy-outline:before {
+  content: "\f494";
+}
+
+/* line 940, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-recording:before {
+  content: "\f497";
+}
+
+/* line 942, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-recording-outline:before {
+  content: "\f496";
+}
+
+/* line 944, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-redo:before {
+  content: "\f499";
+}
+
+/* line 946, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-redo-outline:before {
+  content: "\f498";
+}
+
+/* line 948, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-refresh:before {
+  content: "\f49c";
+}
+
+/* line 950, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-refresh-empty:before {
+  content: "\f49a";
+}
+
+/* line 952, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-refresh-outline:before {
+  content: "\f49b";
+}
+
+/* line 954, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-reload:before {
+  content: "\f49d";
+}
+
+/* line 956, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-reverse-camera:before {
+  content: "\f49f";
+}
+
+/* line 958, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-reverse-camera-outline:before {
+  content: "\f49e";
+}
+
+/* line 960, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-rewind:before {
+  content: "\f4a1";
+}
+
+/* line 962, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-rewind-outline:before {
+  content: "\f4a0";
+}
+
+/* line 964, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-rose:before {
+  content: "\f4a3";
+}
+
+/* line 966, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-rose-outline:before {
+  content: "\f4a2";
+}
+
+/* line 968, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-search:before {
+  content: "\f4a5";
+}
+
+/* line 970, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-search-strong:before {
+  content: "\f4a4";
+}
+
+/* line 972, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-settings:before {
+  content: "\f4a7";
+}
+
+/* line 974, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-settings-strong:before {
+  content: "\f4a6";
+}
+
+/* line 976, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-shuffle:before {
+  content: "\f4a9";
+}
+
+/* line 978, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-shuffle-strong:before {
+  content: "\f4a8";
+}
+
+/* line 980, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-skipbackward:before {
+  content: "\f4ab";
+}
+
+/* line 982, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-skipbackward-outline:before {
+  content: "\f4aa";
+}
+
+/* line 984, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-skipforward:before {
+  content: "\f4ad";
+}
+
+/* line 986, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-skipforward-outline:before {
+  content: "\f4ac";
+}
+
+/* line 988, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-snowy:before {
+  content: "\f4ae";
+}
+
+/* line 990, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-speedometer:before {
+  content: "\f4b0";
+}
+
+/* line 992, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-speedometer-outline:before {
+  content: "\f4af";
+}
+
+/* line 994, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-star:before {
+  content: "\f4b3";
+}
+
+/* line 996, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-star-half:before {
+  content: "\f4b1";
+}
+
+/* line 998, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-star-outline:before {
+  content: "\f4b2";
+}
+
+/* line 1000, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-stopwatch:before {
+  content: "\f4b5";
+}
+
+/* line 1002, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-stopwatch-outline:before {
+  content: "\f4b4";
+}
+
+/* line 1004, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-sunny:before {
+  content: "\f4b7";
+}
+
+/* line 1006, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-sunny-outline:before {
+  content: "\f4b6";
+}
+
+/* line 1008, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-telephone:before {
+  content: "\f4b9";
+}
+
+/* line 1010, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-telephone-outline:before {
+  content: "\f4b8";
+}
+
+/* line 1012, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-tennisball:before {
+  content: "\f4bb";
+}
+
+/* line 1014, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-tennisball-outline:before {
+  content: "\f4ba";
+}
+
+/* line 1016, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-thunderstorm:before {
+  content: "\f4bd";
+}
+
+/* line 1018, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-thunderstorm-outline:before {
+  content: "\f4bc";
+}
+
+/* line 1020, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-time:before {
+  content: "\f4bf";
+}
+
+/* line 1022, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-time-outline:before {
+  content: "\f4be";
+}
+
+/* line 1024, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-timer:before {
+  content: "\f4c1";
+}
+
+/* line 1026, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-timer-outline:before {
+  content: "\f4c0";
+}
+
+/* line 1028, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-toggle:before {
+  content: "\f4c3";
+}
+
+/* line 1030, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-toggle-outline:before {
+  content: "\f4c2";
+}
+
+/* line 1032, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-trash:before {
+  content: "\f4c5";
+}
+
+/* line 1034, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-trash-outline:before {
+  content: "\f4c4";
+}
+
+/* line 1036, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-undo:before {
+  content: "\f4c7";
+}
+
+/* line 1038, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-undo-outline:before {
+  content: "\f4c6";
+}
+
+/* line 1040, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-unlocked:before {
+  content: "\f4c9";
+}
+
+/* line 1042, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-unlocked-outline:before {
+  content: "\f4c8";
+}
+
+/* line 1044, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-upload:before {
+  content: "\f4cb";
+}
+
+/* line 1046, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-upload-outline:before {
+  content: "\f4ca";
+}
+
+/* line 1048, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-videocam:before {
+  content: "\f4cd";
+}
+
+/* line 1050, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-videocam-outline:before {
+  content: "\f4cc";
+}
+
+/* line 1052, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-volume-high:before {
+  content: "\f4ce";
+}
+
+/* line 1054, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-volume-low:before {
+  content: "\f4cf";
+}
+
+/* line 1056, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-wineglass:before {
+  content: "\f4d1";
+}
+
+/* line 1058, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-wineglass-outline:before {
+  content: "\f4d0";
+}
+
+/* line 1060, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-world:before {
+  content: "\f4d3";
+}
+
+/* line 1062, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ios-world-outline:before {
+  content: "\f4d2";
+}
+
+/* line 1064, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ipad:before {
+  content: "\f1f9";
+}
+
+/* line 1066, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-iphone:before {
+  content: "\f1fa";
+}
+
+/* line 1068, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ipod:before {
+  content: "\f1fb";
+}
+
+/* line 1070, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-jet:before {
+  content: "\f295";
+}
+
+/* line 1072, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-key:before {
+  content: "\f296";
+}
+
+/* line 1074, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-knife:before {
+  content: "\f297";
+}
+
+/* line 1076, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-laptop:before {
+  content: "\f1fc";
+}
+
+/* line 1078, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-leaf:before {
+  content: "\f1fd";
+}
+
+/* line 1080, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-levels:before {
+  content: "\f298";
+}
+
+/* line 1082, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-lightbulb:before {
+  content: "\f299";
+}
+
+/* line 1084, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-link:before {
+  content: "\f1fe";
+}
+
+/* line 1086, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-load-a:before {
+  content: "\f29a";
+}
+
+/* line 1088, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-load-b:before {
+  content: "\f29b";
+}
+
+/* line 1090, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-load-c:before {
+  content: "\f29c";
+}
+
+/* line 1092, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-load-d:before {
+  content: "\f29d";
+}
+
+/* line 1094, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-location:before {
+  content: "\f1ff";
+}
+
+/* line 1096, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-lock-combination:before {
+  content: "\f4d4";
+}
+
+/* line 1098, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-locked:before {
+  content: "\f200";
+}
+
+/* line 1100, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-log-in:before {
+  content: "\f29e";
+}
+
+/* line 1102, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-log-out:before {
+  content: "\f29f";
+}
+
+/* line 1104, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-loop:before {
+  content: "\f201";
+}
+
+/* line 1106, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-magnet:before {
+  content: "\f2a0";
+}
+
+/* line 1108, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-male:before {
+  content: "\f2a1";
+}
+
+/* line 1110, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-man:before {
+  content: "\f202";
+}
+
+/* line 1112, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-map:before {
+  content: "\f203";
+}
+
+/* line 1114, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-medkit:before {
+  content: "\f2a2";
+}
+
+/* line 1116, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-merge:before {
+  content: "\f33f";
+}
+
+/* line 1118, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-mic-a:before {
+  content: "\f204";
+}
+
+/* line 1120, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-mic-b:before {
+  content: "\f205";
+}
+
+/* line 1122, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-mic-c:before {
+  content: "\f206";
+}
+
+/* line 1124, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-minus:before {
+  content: "\f209";
+}
+
+/* line 1126, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-minus-circled:before {
+  content: "\f207";
+}
+
+/* line 1128, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-minus-round:before {
+  content: "\f208";
+}
+
+/* line 1130, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-model-s:before {
+  content: "\f2c1";
+}
+
+/* line 1132, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-monitor:before {
+  content: "\f20a";
+}
+
+/* line 1134, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-more:before {
+  content: "\f20b";
+}
+
+/* line 1136, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-mouse:before {
+  content: "\f340";
+}
+
+/* line 1138, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-music-note:before {
+  content: "\f20c";
+}
+
+/* line 1140, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-navicon:before {
+  content: "\f20e";
+}
+
+/* line 1142, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-navicon-round:before {
+  content: "\f20d";
+}
+
+/* line 1144, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-navigate:before {
+  content: "\f2a3";
+}
+
+/* line 1146, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-network:before {
+  content: "\f341";
+}
+
+/* line 1148, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-no-smoking:before {
+  content: "\f2c2";
+}
+
+/* line 1150, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-nuclear:before {
+  content: "\f2a4";
+}
+
+/* line 1152, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-outlet:before {
+  content: "\f342";
+}
+
+/* line 1154, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-paintbrush:before {
+  content: "\f4d5";
+}
+
+/* line 1156, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-paintbucket:before {
+  content: "\f4d6";
+}
+
+/* line 1158, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-paper-airplane:before {
+  content: "\f2c3";
+}
+
+/* line 1160, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-paperclip:before {
+  content: "\f20f";
+}
+
+/* line 1162, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-pause:before {
+  content: "\f210";
+}
+
+/* line 1164, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-person:before {
+  content: "\f213";
+}
+
+/* line 1166, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-person-add:before {
+  content: "\f211";
+}
+
+/* line 1168, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-person-stalker:before {
+  content: "\f212";
+}
+
+/* line 1170, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-pie-graph:before {
+  content: "\f2a5";
+}
+
+/* line 1172, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-pin:before {
+  content: "\f2a6";
+}
+
+/* line 1174, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-pinpoint:before {
+  content: "\f2a7";
+}
+
+/* line 1176, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-pizza:before {
+  content: "\f2a8";
+}
+
+/* line 1178, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-plane:before {
+  content: "\f214";
+}
+
+/* line 1180, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-planet:before {
+  content: "\f343";
+}
+
+/* line 1182, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-play:before {
+  content: "\f215";
+}
+
+/* line 1184, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-playstation:before {
+  content: "\f30a";
+}
+
+/* line 1186, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-plus:before {
+  content: "\f218";
+}
+
+/* line 1188, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-plus-circled:before {
+  content: "\f216";
+}
+
+/* line 1190, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-plus-round:before {
+  content: "\f217";
+}
+
+/* line 1192, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-podium:before {
+  content: "\f344";
+}
+
+/* line 1194, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-pound:before {
+  content: "\f219";
+}
+
+/* line 1196, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-power:before {
+  content: "\f2a9";
+}
+
+/* line 1198, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-pricetag:before {
+  content: "\f2aa";
+}
+
+/* line 1200, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-pricetags:before {
+  content: "\f2ab";
+}
+
+/* line 1202, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-printer:before {
+  content: "\f21a";
+}
+
+/* line 1204, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-pull-request:before {
+  content: "\f345";
+}
+
+/* line 1206, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-qr-scanner:before {
+  content: "\f346";
+}
+
+/* line 1208, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-quote:before {
+  content: "\f347";
+}
+
+/* line 1210, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-radio-waves:before {
+  content: "\f2ac";
+}
+
+/* line 1212, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-record:before {
+  content: "\f21b";
+}
+
+/* line 1214, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-refresh:before {
+  content: "\f21c";
+}
+
+/* line 1216, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-reply:before {
+  content: "\f21e";
+}
+
+/* line 1218, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-reply-all:before {
+  content: "\f21d";
+}
+
+/* line 1220, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ribbon-a:before {
+  content: "\f348";
+}
+
+/* line 1222, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-ribbon-b:before {
+  content: "\f349";
+}
+
+/* line 1224, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-sad:before {
+  content: "\f34a";
+}
+
+/* line 1226, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-sad-outline:before {
+  content: "\f4d7";
+}
+
+/* line 1228, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-scissors:before {
+  content: "\f34b";
+}
+
+/* line 1230, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-search:before {
+  content: "\f21f";
+}
+
+/* line 1232, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-settings:before {
+  content: "\f2ad";
+}
+
+/* line 1234, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-share:before {
+  content: "\f220";
+}
+
+/* line 1236, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-shuffle:before {
+  content: "\f221";
+}
+
+/* line 1238, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-skip-backward:before {
+  content: "\f222";
+}
+
+/* line 1240, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-skip-forward:before {
+  content: "\f223";
+}
+
+/* line 1242, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-android:before {
+  content: "\f225";
+}
+
+/* line 1244, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-android-outline:before {
+  content: "\f224";
+}
+
+/* line 1246, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-angular:before {
+  content: "\f4d9";
+}
+
+/* line 1248, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-angular-outline:before {
+  content: "\f4d8";
+}
+
+/* line 1250, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-apple:before {
+  content: "\f227";
+}
+
+/* line 1252, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-apple-outline:before {
+  content: "\f226";
+}
+
+/* line 1254, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-bitcoin:before {
+  content: "\f2af";
+}
+
+/* line 1256, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-bitcoin-outline:before {
+  content: "\f2ae";
+}
+
+/* line 1258, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-buffer:before {
+  content: "\f229";
+}
+
+/* line 1260, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-buffer-outline:before {
+  content: "\f228";
+}
+
+/* line 1262, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-chrome:before {
+  content: "\f4db";
+}
+
+/* line 1264, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-chrome-outline:before {
+  content: "\f4da";
+}
+
+/* line 1266, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-codepen:before {
+  content: "\f4dd";
+}
+
+/* line 1268, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-codepen-outline:before {
+  content: "\f4dc";
+}
+
+/* line 1270, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-css3:before {
+  content: "\f4df";
+}
+
+/* line 1272, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-css3-outline:before {
+  content: "\f4de";
+}
+
+/* line 1274, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-designernews:before {
+  content: "\f22b";
+}
+
+/* line 1276, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-designernews-outline:before {
+  content: "\f22a";
+}
+
+/* line 1278, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-dribbble:before {
+  content: "\f22d";
+}
+
+/* line 1280, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-dribbble-outline:before {
+  content: "\f22c";
+}
+
+/* line 1282, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-dropbox:before {
+  content: "\f22f";
+}
+
+/* line 1284, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-dropbox-outline:before {
+  content: "\f22e";
+}
+
+/* line 1286, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-euro:before {
+  content: "\f4e1";
+}
+
+/* line 1288, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-euro-outline:before {
+  content: "\f4e0";
+}
+
+/* line 1290, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-facebook:before {
+  content: "\f231";
+}
+
+/* line 1292, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-facebook-outline:before {
+  content: "\f230";
+}
+
+/* line 1294, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-foursquare:before {
+  content: "\f34d";
+}
+
+/* line 1296, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-foursquare-outline:before {
+  content: "\f34c";
+}
+
+/* line 1298, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-freebsd-devil:before {
+  content: "\f2c4";
+}
+
+/* line 1300, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-github:before {
+  content: "\f233";
+}
+
+/* line 1302, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-github-outline:before {
+  content: "\f232";
+}
+
+/* line 1304, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-google:before {
+  content: "\f34f";
+}
+
+/* line 1306, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-google-outline:before {
+  content: "\f34e";
+}
+
+/* line 1308, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-googleplus:before {
+  content: "\f235";
+}
+
+/* line 1310, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-googleplus-outline:before {
+  content: "\f234";
+}
+
+/* line 1312, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-hackernews:before {
+  content: "\f237";
+}
+
+/* line 1314, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-hackernews-outline:before {
+  content: "\f236";
+}
+
+/* line 1316, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-html5:before {
+  content: "\f4e3";
+}
+
+/* line 1318, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-html5-outline:before {
+  content: "\f4e2";
+}
+
+/* line 1320, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-instagram:before {
+  content: "\f351";
+}
+
+/* line 1322, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-instagram-outline:before {
+  content: "\f350";
+}
+
+/* line 1324, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-javascript:before {
+  content: "\f4e5";
+}
+
+/* line 1326, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-javascript-outline:before {
+  content: "\f4e4";
+}
+
+/* line 1328, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-linkedin:before {
+  content: "\f239";
+}
+
+/* line 1330, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-linkedin-outline:before {
+  content: "\f238";
+}
+
+/* line 1332, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-markdown:before {
+  content: "\f4e6";
+}
+
+/* line 1334, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-nodejs:before {
+  content: "\f4e7";
+}
+
+/* line 1336, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-octocat:before {
+  content: "\f4e8";
+}
+
+/* line 1338, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-pinterest:before {
+  content: "\f2b1";
+}
+
+/* line 1340, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-pinterest-outline:before {
+  content: "\f2b0";
+}
+
+/* line 1342, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-python:before {
+  content: "\f4e9";
+}
+
+/* line 1344, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-reddit:before {
+  content: "\f23b";
+}
+
+/* line 1346, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-reddit-outline:before {
+  content: "\f23a";
+}
+
+/* line 1348, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-rss:before {
+  content: "\f23d";
+}
+
+/* line 1350, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-rss-outline:before {
+  content: "\f23c";
+}
+
+/* line 1352, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-sass:before {
+  content: "\f4ea";
+}
+
+/* line 1354, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-skype:before {
+  content: "\f23f";
+}
+
+/* line 1356, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-skype-outline:before {
+  content: "\f23e";
+}
+
+/* line 1358, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-snapchat:before {
+  content: "\f4ec";
+}
+
+/* line 1360, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-snapchat-outline:before {
+  content: "\f4eb";
+}
+
+/* line 1362, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-tumblr:before {
+  content: "\f241";
+}
+
+/* line 1364, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-tumblr-outline:before {
+  content: "\f240";
+}
+
+/* line 1366, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-tux:before {
+  content: "\f2c5";
+}
+
+/* line 1368, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-twitch:before {
+  content: "\f4ee";
+}
+
+/* line 1370, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-twitch-outline:before {
+  content: "\f4ed";
+}
+
+/* line 1372, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-twitter:before {
+  content: "\f243";
+}
+
+/* line 1374, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-twitter-outline:before {
+  content: "\f242";
+}
+
+/* line 1376, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-usd:before {
+  content: "\f353";
+}
+
+/* line 1378, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-usd-outline:before {
+  content: "\f352";
+}
+
+/* line 1380, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-vimeo:before {
+  content: "\f245";
+}
+
+/* line 1382, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-vimeo-outline:before {
+  content: "\f244";
+}
+
+/* line 1384, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-whatsapp:before {
+  content: "\f4f0";
+}
+
+/* line 1386, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-whatsapp-outline:before {
+  content: "\f4ef";
+}
+
+/* line 1388, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-windows:before {
+  content: "\f247";
+}
+
+/* line 1390, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-windows-outline:before {
+  content: "\f246";
+}
+
+/* line 1392, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-wordpress:before {
+  content: "\f249";
+}
+
+/* line 1394, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-wordpress-outline:before {
+  content: "\f248";
+}
+
+/* line 1396, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-yahoo:before {
+  content: "\f24b";
+}
+
+/* line 1398, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-yahoo-outline:before {
+  content: "\f24a";
+}
+
+/* line 1400, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-yen:before {
+  content: "\f4f2";
+}
+
+/* line 1402, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-yen-outline:before {
+  content: "\f4f1";
+}
+
+/* line 1404, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-youtube:before {
+  content: "\f24d";
+}
+
+/* line 1406, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-social-youtube-outline:before {
+  content: "\f24c";
+}
+
+/* line 1408, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-soup-can:before {
+  content: "\f4f4";
+}
+
+/* line 1410, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-soup-can-outline:before {
+  content: "\f4f3";
+}
+
+/* line 1412, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-speakerphone:before {
+  content: "\f2b2";
+}
+
+/* line 1414, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-speedometer:before {
+  content: "\f2b3";
+}
+
+/* line 1416, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-spoon:before {
+  content: "\f2b4";
+}
+
+/* line 1418, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-star:before {
+  content: "\f24e";
+}
+
+/* line 1420, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-stats-bars:before {
+  content: "\f2b5";
+}
+
+/* line 1422, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-steam:before {
+  content: "\f30b";
+}
+
+/* line 1424, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-stop:before {
+  content: "\f24f";
+}
+
+/* line 1426, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-thermometer:before {
+  content: "\f2b6";
+}
+
+/* line 1428, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-thumbsdown:before {
+  content: "\f250";
+}
+
+/* line 1430, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-thumbsup:before {
+  content: "\f251";
+}
+
+/* line 1432, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-toggle:before {
+  content: "\f355";
+}
+
+/* line 1434, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-toggle-filled:before {
+  content: "\f354";
+}
+
+/* line 1436, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-transgender:before {
+  content: "\f4f5";
+}
+
+/* line 1438, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-trash-a:before {
+  content: "\f252";
+}
+
+/* line 1440, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-trash-b:before {
+  content: "\f253";
+}
+
+/* line 1442, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-trophy:before {
+  content: "\f356";
+}
+
+/* line 1444, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-tshirt:before {
+  content: "\f4f7";
+}
+
+/* line 1446, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-tshirt-outline:before {
+  content: "\f4f6";
+}
+
+/* line 1448, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-umbrella:before {
+  content: "\f2b7";
+}
+
+/* line 1450, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-university:before {
+  content: "\f357";
+}
+
+/* line 1452, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-unlocked:before {
+  content: "\f254";
+}
+
+/* line 1454, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-upload:before {
+  content: "\f255";
+}
+
+/* line 1456, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-usb:before {
+  content: "\f2b8";
+}
+
+/* line 1458, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-videocamera:before {
+  content: "\f256";
+}
+
+/* line 1460, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-volume-high:before {
+  content: "\f257";
+}
+
+/* line 1462, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-volume-low:before {
+  content: "\f258";
+}
+
+/* line 1464, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-volume-medium:before {
+  content: "\f259";
+}
+
+/* line 1466, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-volume-mute:before {
+  content: "\f25a";
+}
+
+/* line 1468, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-wand:before {
+  content: "\f358";
+}
+
+/* line 1470, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-waterdrop:before {
+  content: "\f25b";
+}
+
+/* line 1472, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-wifi:before {
+  content: "\f25c";
+}
+
+/* line 1474, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-wineglass:before {
+  content: "\f2b9";
+}
+
+/* line 1476, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-woman:before {
+  content: "\f25d";
+}
+
+/* line 1478, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-wrench:before {
+  content: "\f2ba";
+}
+
+/* line 1480, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/ionicons.scss */
+.ion-xbox:before {
+  content: "\f30c";
+}
+
+/* line 3, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+body {
+  /*  background-color: rgba(162, 205, 233, 0.53);
+  */
+}
+
+/* line 7, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.navbar ul {
+  top: -14px;
+  display: inline;
+}
+
+/* line 12, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.spotr-logo {
+  padding-left: 40px;
+}
+
+/* line 16, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.logged-in {
+  text-decoration: none;
+  text-align: right;
+  padding-left: 30px;
+  list-style: none;
+  list-style-type: none;
+  float: right;
+  right: 40px;
+  display: inline;
+}
+
+/* line 27, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#current-user,
+#current-user a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  right: 40px;
+  display: inline;
+}
+
+/* line 36, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#current-user:hover,
+#current-user:hover a {
+  text-decoration: none;
+}
+
+/* line 41, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#hello-user {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+/* line 47, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#user-picture {
+  height: 30px;
+  width: 30px;
+  right: 40px;
+  margin-left: 90%;
+  margin-top: -5px;
+}
+
+/* line 55, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.navbar {
+  text-decoration: none;
+}
+
+/* line 59, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.buffer {
+  padding: 0 40px 0 40px;
+  margin-bottom: -25px;
+}
+
+/* line 64, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.error {
+  color: red;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  position: absolute;
+}
+
+/* line 71, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#logo {
+  font-size: 24px;
+  font-family: "Helvetica Neue", HelveticaNeue, "Arimo", "Source Sans Pro", "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+  padding-left: 15px;
+}
+
+/* line 77, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#search-block {
+  height: 110px;
+  border: none;
+  /*  border-top: 1px solid #606469;
+    border-bottom: 1px solid #606469;*/
+  display: block;
+  font-weight: 100;
+  font-size: 4.2em;
+  font-family: "Helvetica Neue", HelveticaNeue, "Arimo", "Source Sans Pro", "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+  border-color: #DCDCDC;
+  margin: .1em 0;
+  margin-left: 40px;
+  padding: .15em 0;
+}
+
+/* line 93, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#button-block {
+  right: 20px;
+  display: block;
+  position: absolute;
+  margin-top: -105px;
+  z-index: 20;
+}
+
+/* line 101, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#bottom-button-block {
+  right: 115px;
+  display: block;
+  position: absolute;
+  margin-top: -65px;
+  z-index: 10;
+}
+
+/* line 109, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.search-button {
+  color: #777;
+  background-color: #DCDCDC;
+}
+
+/* line 114, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.search-button:hover {
+  color: #222;
+  background-color: #BBB;
+}
+
+/* line 119, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#searchTags {
+  height: 65px;
+  width: 76%;
+}
+
+/* line 124, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#searchTags:focus,
+#searchTagSubmit:focus,
+#searchImageSubmit:focus,
+#searchLocationSubmit:focus {
+  outline: none;
+}
+
+/* line 131, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#searchTagSubmit,
+#searchImageSubmit,
+#searchLocationSubmit {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: none;
+  font-size: 20px;
+  margin-top: -20px;
+  right: 0px;
+  display: inline;
+}
+
+/* line 143, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#and-search,
+#or-search {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: none;
+  font-size: 10px;
+  margin-bottom: 10px;
+  right: 0px;
+  display: inline;
+}
+
+/* line 154, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#relatedTags {
+  padding-left: 10px;
+  transition: all .2s ease-in-out;
+  font-family: 'Dosis', Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* line 161, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#relatedTags:hover {
+  transform: scale(1.3);
+}
+
+/* line 165, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#tag-status {
+  color: #DCDCDC;
+}
+
+/* line 169, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+fieldset {
+  display: block;
+  -webkit-margin-start: 2px;
+  -webkit-margin-end: 2px;
+  -webkit-padding-before: 0.35em;
+  -webkit-padding-start: 0.75em;
+  -webkit-padding-end: 0.75em;
+  -webkit-padding-after: 0.625em;
+}
+
+/* line 179, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+input {
+  border: none;
+}
+
+/* line 183, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+figure {
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 80%;
+  height: 60vh;
+}
+
+/* line 191, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+gmap {
+  display: block;
+  height: 100%;
+}
+
+/* line 196, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+map-marker {
+  width: 30px;
+  height: 30px;
+  /*NOTE: margins must be half the size of the marker size.
+  This ensures that markers are placed at the correct location,
+  and that custom markers are overlaid in place of standard markers.*/
+  margin-top: -15px;
+  margin-left: -15px;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  transition: all .3s;
+  border-bottom: 2px solid #DCDCDC;
+  border-top: 2px solid #DCDCDC;
+  border-left: 2px solid #DCDCDC;
+  border-right: 2px solid #DCDCDC;
+  border-radius: 2%;
+  -moz-animation-name: dropMarker;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 0.6s;
+  -webkit-animation-name: dropMarker;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.6s;
+  animation-name: dropMarker;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.6s;
+}
+
+/* line 236, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+map-marker.active {
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  background-size: 100%;
+  z-index: 5;
+  border-bottom: 2px solid #DCDCDC;
+  border-top: 2px solid #DCDCDC;
+  border-left: 2px solid #DCDCDC;
+  border-right: 2px solid #DCDCDC;
+  border-radius: 2%;
+}
+
+/* line 250, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+map-marker, map-marker.active {
+  background-size: 100%;
+  box-shadow: 4px 4px 4px #888888;
+}
+
+/* line 255, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#tags-list {
+  width: 19%;
+  right: 40px;
+  height: 60vh;
+  overflow: auto;
+  background-color: rgba(229, 226, 226, 0.44);
+  position: absolute;
+  padding: 20px;
+}
+
+/* line 265, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#username {
+  font-weight: bold;
+  margin-top: 155px;
+}
+
+/* line 270, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+ul {
+  bottom: -15px;
+  padding: 1em;
+  display: block;
+  position: absolute;
+}
+
+/* line 277, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+li {
+  font-family: sans-serif;
+  color: #999;
+  margin-bottom: .5em;
+  cursor: pointer;
+}
+
+/* line 284, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+li:hover {
+  color: #222;
+}
+
+/* line 288, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.image-list {
+  border-radius: 1%;
+  background-color: rgba(229, 226, 226, 0.44);
+  background-size: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* line 296, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#individual-image {
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+}
+
+/* line 302, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.inner-image {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 307, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#profile-image {
+  height: 90px;
+  width: 90px;
+  float: left;
+  filter: grayscale(90%);
+  -webkit-filter: grayscale(90%);
+}
+
+/* line 315, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#profile-image:hover {
+  transition: all .9s ease-in-out;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+/* line 321, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+.image-list:hover #profile-image {
+  transition: all .9s ease-in-out;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+/* line 327, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#image-text {
+  padding-left: 100px;
+  text-align: left;
+}
+
+/* line 332, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#image-username {
+  font-family: 'Permanent Marker', Arial, sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  top: 5px;
+  left: 3px;
+}
+
+/* line 340, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#image-name {
+  font-family: 'Poiret One', Arial, sans-serif;
+}
+
+/* line 344, /Users/rahulramakrishna/Desktop/Makers Academy/Projects/Course/Final-project/Brim_final/app/assets/stylesheets/ng-app/main.scss */
+#image-caption, #image-location {
+  font-family: 'Poiret One', Arial, sans-serif;
+}
+
+@-moz-keyframes dropMarker {
+  0% {
+    -moz-transform: translateY(-80px);
+  }
+  15% {
+    -moz-transform: translateY(0);
+    padding-bottom: 5px;
+  }
+  30% {
+    -moz-transform: translateY(-50%);
+  }
+  40% {
+    -moz-transform: translateY(0%);
+    padding-bottom: 6px;
+  }
+  50% {
+    -moz-transform: translateY(-30%);
+  }
+  70% {
+    -moz-transform: translateY(0%);
+    padding-bottom: 7px;
+  }
+  80% {
+    -moz-transform: translateY(-15%);
+  }
+  90% {
+    -moz-transform: translateY(0%);
+    padding-bottom: 8px;
+  }
+  95% {
+    -moz-transform: translateY(-7%);
+  }
+  97% {
+    -moz-transform: translateY(0%);
+    padding-bottom: 9px;
+  }
+  99% {
+    -moz-transform: translateY(-3%);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes dropMarker {
+  0% {
+    -webkit-transform: translateY(-80px);
+  }
+  15% {
+    -webkit-transform: translateY(0);
+    padding-bottom: 3px;
+  }
+  30% {
+    -webkit-transform: translateY(-50%);
+  }
+  40% {
+    -webkit-transform: translateY(0%);
+    padding-bottom: 4px;
+  }
+  50% {
+    -webkit-transform: translateY(-30%);
+  }
+  70% {
+    -webkit-transform: translateY(0%);
+    padding-bottom: 5px;
+  }
+  80% {
+    -webkit-transform: translateY(-15%);
+  }
+  90% {
+    -webkit-transform: translateY(0%);
+    padding-bottom: 6px;
+  }
+  95% {
+    -webkit-transform: translateY(-7%);
+  }
+  97% {
+    -webkit-transform: translateY(0%);
+    padding-bottom: 7px;
+  }
+  99% {
+    -webkit-transform: translateY(-3%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes dropMarker {
+  0% {
+    transform: translateY(-80px);
+  }
+  15% {
+    transform: translateY(0);
+    padding-bottom: 3px;
+  }
+  30% {
+    transform: translateY(-50%);
+  }
+  40% {
+    transform: translateY(0%);
+    padding-bottom: 4px;
+  }
+  50% {
+    transform: translateY(-30%);
+  }
+  70% {
+    transform: translateY(0%);
+    padding-bottom: 5px;
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  90% {
+    transform: translateY(0%);
+    padding-bottom: 6px;
+  }
+  95% {
+    transform: translateY(-7%);
+  }
+  97% {
+    transform: translateY(0%);
+    padding-bottom: 7px;
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
