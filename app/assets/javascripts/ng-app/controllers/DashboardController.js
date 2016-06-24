@@ -13,202 +13,7 @@ angular.module("brimApp")
   $scope.locations = [];
   $scope.searchParam = [];
 
-  // Moves caret to end of text field 
-  $scope.moveCursorToEnd = function(el) {
-    if (typeof el.selectionStart == "number") {
-        el.selectionStart = el.selectionEnd = el.value.length;
-    } else if (typeof el.createTextRange != "undefined") {
-        el.focus();
-        var range = el.createTextRange();
-        range.collapse(false);
-        range.select();
-    }
-  }
 
-  // Map Controller & Location Controller
-  var mapEl = $element.find('gmap')[0];
-  var $main_color = '#2d313f',
-  $saturation= -20,
-  $brightness= 5;
-  var style = [ 
-    {
-      //set saturation for the labels on the map
-      elementType: "labels",
-      stylers: [
-        {saturation: $saturation}
-      ]
-    },  
-      { //poi stands for point of interest - don't show these lables on the map 
-      featureType: "poi",
-      elementType: "labels",
-      stylers: [
-        {visibility: "off"}
-      ]
-    },
-    {
-      //don't show highways lables on the map
-          featureType: 'road.highway',
-          elementType: 'labels',
-          stylers: [
-              {visibility: "off"}
-          ]
-      }, 
-    {   
-      //don't show local road lables on the map
-      featureType: "road.local", 
-      elementType: "labels.icon", 
-      stylers: [
-        {visibility: "off"} 
-      ] 
-    },
-    { 
-      //don't show arterial road lables on the map
-      featureType: "road.arterial", 
-      elementType: "labels.icon", 
-      stylers: [
-        {visibility: "off"}
-      ] 
-    },
-    {
-      //don't show road lables on the map
-      featureType: "road",
-      elementType: "geometry.stroke",
-      stylers: [
-        {visibility: "off"}
-      ]
-    }, 
-    //style different elements on the map
-    { 
-      featureType: "transit", 
-      elementType: "geometry.fill", 
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    }, 
-    {
-      featureType: "poi",
-      elementType: "geometry.fill",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    },
-    {
-      featureType: "poi.government",
-      elementType: "geometry.fill",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    },
-    {
-      featureType: "poi.sport_complex",
-      elementType: "geometry.fill",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    },
-    {
-      featureType: "poi.attraction",
-      elementType: "geometry.fill",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    },
-    {
-      featureType: "poi.business",
-      elementType: "geometry.fill",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    },
-    {
-      featureType: "transit",
-      elementType: "geometry.fill",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    },
-    {
-      featureType: "transit.station",
-      elementType: "geometry.fill",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    },
-    {
-      featureType: "landscape",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-      
-    },
-    {
-      featureType: "road",
-      elementType: "geometry.fill",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    },
-    {
-      featureType: "road.highway",
-      elementType: "geometry.fill",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    }, 
-    {
-      featureType: "water",
-      elementType: "geometry",
-      stylers: [
-        { hue: $main_color },
-        { visibility: "on" }, 
-        { lightness: $brightness }, 
-        { saturation: $saturation }
-      ]
-    }
-  ];
-
-  var mapOptions = {
-    zoom: 13,
-    center: {lat: 51.5020,lng: -0.1281},
-    enableHighAccuracy: true, 
-    styles: style
-  };
-
-  var gmap = new google.maps.Map(mapEl, mapOptions);
-  $scope.gmap = gmap;
 
 
   // Instagram Controller
@@ -226,44 +31,27 @@ angular.module("brimApp")
     }
   };
 
+  $scope.tester = function(lat,lng) {
+    GetImageByLocationService.get(lat,lng).then(function(response) {
+      console.log(response)
+      return response
+    }).then(function(response){
+        $scope.testdata.push(response.data)
+    });
+  }
+
   // $scope.tester = function(lat,lng) {
-  //   GetImageByLocationService.get(lat,lng).then(function(response) {
-  //     return response
-  //   }).then(function(response){
-  //     response.forEach(function(array){
-  //       $scope.testdata.push(array)
+  //   $scope.images = []
+  //   $scope.locations = []
+  //   GetImageByLocationService.get(lat,lng).then(function(response){
+  //     $scope.transferInfo(response.data)
+  //     $scope.images = response.data
+  //     response.forEach(function(object) {
+  //       $scope.testdata.push(object)
   //     })
   //   });
   // }
 
-
-
-  // $scope.tester = function() {
-  //   var holding = [];
-
-  //   $scope.images = [];
-  //   var storage = [];
-  //   var tags = $scope.searchParam.split("+");
-  //   tags.forEach(function(tag){
-  //     GetImagesByTagService.get(tag).then(function(response){
-  //       storage.push(response.data)
-  //     }).then(function(){
-  //       $scope.images = [].concat.apply([],storage)
-  //     })
-  //   })
-  //   .then(function(){
-  //     var images = $scope.images
-  //     images.forEach(function(image){
-  //       var ctr = 0
-  //       image.tags.forEach(function(tag){
-  //         if(image.tags.includes(tag)){
-  //           ctr++
-  //         }
-  //       })
-  //       if(ctr===images.tags.length){holding.push(image)}
-  //     })
-  //   }).then(function(){$scope.images = holding})
-  // }
 
   $scope.setAndOr = function(arg){
     if(arg==='or'){
@@ -276,28 +64,46 @@ angular.module("brimApp")
     }
   }
 
-  $scope.tester = function() {
-    $scope.images = [];
-    var storage = [];
-    var tags = $scope.searchParam.split("+")
-    console.log(tags)
-    GetImagesByTagService.get(tags[0]).then(function(response) {
+  $scope.setTagsOrLocation = function(arg){
+    if(arg==='tag'){$scope.tagOrLocation = true}
+    if(arg==='loc'){$scope.tagOrLocation = false}
+  }
+
+  $scope.getTags = function(tagsearch) {
+    $scope.error = null;
+    $scope.setTagsOrLocation('tag');
+    GetTagsService.get(tagsearch).then(function(response) {
       $scope.getResponseSuccess($scope, response, "This hashtag has returned no results" )
-      response.data.forEach(function(image){
-        var tagctr = 0;
-        tags.forEach(function(tag) {
-          if(image.tags.includes(tag)){
-            tagctr++;
-          }
-        })
-        if(tagctr === tags.length) {
-          storage.push(image)
-        }
-      })
-      console.log(storage)
+      $scope.tags = response.data;
     });
-      $scope.images = storage
-      $scope.transferInfo($scope.images)
+  }
+
+  $scope.searchByTags = function(tag) {
+    $scope.error = null;
+    if($scope.andOr==='or'){
+      $scope.images = [];
+      $scope.locations = [];
+      var tags = $scope.searchParam.split(",");
+      if(tags.length<2){
+        $scope.searchOneTag(tag);
+      }
+      else {
+        $scope.searchAllTags();
+      };
+    }
+    if($scope.andOr==='and'){
+      console.log('herp')
+      $scope.images = [];
+      $scope.locations = [];
+      var tags = $scope.searchParam.split("+");
+      console.log(tags)
+      if(tags.length<2){
+        $scope.searchOneTag(tag);
+      }
+      else {
+        $scope.searchImagesWithEachTag();
+      };
+    }
   }
 
   $scope.searchImagesWithEachTag = function() {
@@ -326,14 +132,15 @@ angular.module("brimApp")
 
   $scope.searchAllTags = function() {
     $scope.images = [];
-    var storage = [];
-    var tags = $scope.searchParam.split(",");
+    var storage = [], ctr = 0, tags = $scope.searchParam.split(",");
     tags.forEach(function(tag){
       GetImagesByTagService.get(tag).then(function(response){
         storage.push(response.data)
-      }).then(function(){
         $scope.images = [].concat.apply([],storage)
-        $scope.transferInfo($scope.images)
+        ctr++
+        if(ctr===tags.length){
+          $scope.transferInfo($scope.images)
+        }
       })
     })
   }
@@ -346,44 +153,7 @@ angular.module("brimApp")
     });
   }
 
-
-  $scope.getTags = function(tagsearch) {
-    $scope.error = null;
-    GetTagsService.get(tagsearch).then(function(response) {
-      $scope.getResponseSuccess($scope, response, "This hashtag has returned no results" )
-      $scope.tags = response.data;
-    });
-  }
-
-  $scope.searchByTags = function(tag) {
-    $scope.error = null;
-    if($scope.andOr==='or'){
-      $scope.images = [];
-      $scope.locations = [];
-      var tags = $scope.searchParam.split(",");
-      if(tags.length<2){
-        $scope.searchOneTag(tag);
-      }
-      else {
-        $scope.searchAllTags();
-      };
-    }
-    // if($scope.andOr==='and'){
-    //   console.log('herp')
-    //   $scope.images = [];
-    //   $scope.locations = [];
-    //   var tags = $scope.searchParam.split("+");
-    //   if(tags.length<2){
-    //     $scope.searchOneTag(tag);
-    //   }
-    //   else {
-    //     $scope.searchImagesWithEachTag();
-    //   };
-    // }
-  }
-
   $scope.saveTag = function(tag, el) {
-    // $scope.moveCursorToEnd(el);
     if(Array.isArray($scope.searchParam)) {
       var array = $scope.searchParam
       array.push(tag);
@@ -397,36 +167,7 @@ angular.module("brimApp")
     if($scope.searchParam[0]===','){$scope.searchParam=$scope.searchParam.slice(1,$scope.searchParam.length)}
   };
 
-  $scope.searchMultipleTags = function(arg) {
-    if(arg === 'or') {
-      var tags = $scope.searchParam.split(",");
-      tags.forEach(function(tag){
-        $scope.getImagesByTags(tag)
-      })
-    }
-    if(arg === 'and') {
-      $scope.images = []
-      GetImagesByTagService.get($scope.chosenTags[0]).then(function(response) {
-      $scope.getResponseSuccess($scope, response, "This hashtag has returned no results" )
-      response.data.forEach(function(image){
-        var tagctr = 0;
-        $scope.chosenTags.forEach(function(tag) {
-          if(image.tags.includes(tag)){
-            tagctr++;
-          }
-        })
-        if(tagctr === $scope.chosenTags.length) {
-          $scope.images.push(image)
-        }
-      })
-    });
-      $scope.transferInfo($scope.images)
-    }
-  };
-
   $scope.getImagesByTags = function(tag) {
-    // $scope.images = []
-    // $scope.locations = []
     GetImagesByTagService.get(tag).then(function(response) {
       $scope.getResponseSuccess($scope, response, "This hashtag has returned no results" )
       $scope.transferInfo(response.data)
@@ -436,8 +177,9 @@ angular.module("brimApp")
     });
   }
 
-  $scope.searchByLocation = function(address) {
+  $scope.searchForLocations = function(address) {
     $scope.addressList = []
+    $scope.setTagsOrLocation('loc')
     GetGeocodeService.getGeocode(address).then(function(response) {
       response.forEach(function(address) {
         $scope.addressList.push(address)
@@ -449,11 +191,8 @@ angular.module("brimApp")
     $scope.images = []
     $scope.locations = []
     GetImageByLocationService.get(lat,lng).then(function(response){
-      $scope.transferInfo(response.data)
-      $scope.images = response.data
-      response.forEach(function(object) {
-        $scope.testdata.push(object)
-      })
+      $scope.transferInfo(response.data.data)
+      $scope.images = response.data.data
     });
   };
 
@@ -489,4 +228,190 @@ angular.module("brimApp")
     })
   }
 
+// Map Controller & Location Controller
+  var mapEl = $element.find('gmap')[0];
+  var $main_color = '#2d313f',
+  $saturation= -20,
+  $brightness= 5;
+  var style = [
+    {
+      //set saturation for the labels on the map
+      elementType: "labels",
+      stylers: [
+        {saturation: $saturation}
+      ]
+    },
+      { //poi stands for point of interest - don't show these lables on the map
+      featureType: "poi",
+      elementType: "labels",
+      stylers: [
+        {visibility: "off"}
+      ]
+    },
+    {
+      //don't show highways lables on the map
+          featureType: 'road.highway',
+          elementType: 'labels',
+          stylers: [
+              {visibility: "off"}
+          ]
+      },
+    {
+      //don't show local road lables on the map
+      featureType: "road.local",
+      elementType: "labels.icon",
+      stylers: [
+        {visibility: "off"}
+      ]
+    },
+    {
+      //don't show arterial road lables on the map
+      featureType: "road.arterial",
+      elementType: "labels.icon",
+      stylers: [
+        {visibility: "off"}
+      ]
+    },
+    {
+      //don't show road lables on the map
+      featureType: "road",
+      elementType: "geometry.stroke",
+      stylers: [
+        {visibility: "off"}
+      ]
+    },
+    //style different elements on the map
+    {
+      featureType: "transit",
+      elementType: "geometry.fill",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    },
+    {
+      featureType: "poi",
+      elementType: "geometry.fill",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    },
+    {
+      featureType: "poi.government",
+      elementType: "geometry.fill",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    },
+    {
+      featureType: "poi.sport_complex",
+      elementType: "geometry.fill",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    },
+    {
+      featureType: "poi.attraction",
+      elementType: "geometry.fill",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    },
+    {
+      featureType: "poi.business",
+      elementType: "geometry.fill",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    },
+    {
+      featureType: "transit",
+      elementType: "geometry.fill",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    },
+    {
+      featureType: "transit.station",
+      elementType: "geometry.fill",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    },
+    {
+      featureType: "landscape",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+
+    },
+    {
+      featureType: "road",
+      elementType: "geometry.fill",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    },
+    {
+      featureType: "road.highway",
+      elementType: "geometry.fill",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    },
+    {
+      featureType: "water",
+      elementType: "geometry",
+      stylers: [
+        { hue: $main_color },
+        { visibility: "on" },
+        { lightness: $brightness },
+        { saturation: $saturation }
+      ]
+    }
+  ];
+
+  var mapOptions = {
+    zoom: 13,
+    center: {lat: 51.5020,lng: -0.1281},
+    enableHighAccuracy: true,
+    styles: style
+  };
+
+  var gmap = new google.maps.Map(mapEl, mapOptions);
+  $scope.gmap = gmap;
+
 });
+

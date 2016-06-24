@@ -16,19 +16,10 @@ brimApp.service('GetImageByLocationService', ['$http', function($http) {
             'callback': 'JSON_CALLBACK'
           }
         };
-        var returnData = []
         return $http.jsonp(idUrl, config).then(function(response){
-          response.data.data.forEach(function(location){
-            if(location.id!=='0'){
-              var imageRequest = "/locations/" + location.id + "/media/recent?" + access_token
-              var imageUrl = base + imageRequest
-
-              $http.jsonp(imageUrl, config).then(function(response){
-                returnData.push(response.data.data)
-              });
-            }
-          });
-          return returnData;
+          var imageRequest = "/locations/" + response.data.data[0].id + "/media/recent?" + access_token
+          var imageUrl = base + imageRequest
+          return $http.jsonp(imageUrl, config)
         });
       }
     };
