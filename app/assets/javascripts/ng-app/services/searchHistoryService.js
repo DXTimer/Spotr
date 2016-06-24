@@ -16,7 +16,13 @@ brimApp.service('SearchHistoryService', function($http, $window) {
       },
       'post': function() {
 				var request = home + '/api/users/'+ localStorage.getItem('id') + "/searches";
-        var params = JSON.stringify({search: {id:1, uid: 2, tags: ["ball", "cat"]}});
+				if(window.Prototype) {
+					 delete Object.prototype.toJSON;
+					 delete Array.prototype.toJSON;
+					 delete Hash.prototype.toJSON;
+					 delete String.prototype.toJSON;
+				}
+				var params = JSON.stringify({search: {id: localStorage.getItem('id'), tags: localStorage.getItem('tags')}});
         return $http.post(request, params).catch(function(error) {
 				})
 			}
