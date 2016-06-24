@@ -13,9 +13,6 @@ angular.module("brimApp")
   $scope.locations = [];
   $scope.searchParam = [];
 
-
-
-
   // Instagram Controller
 
   $scope.getResponseSuccess = function(scope, res, err) {
@@ -412,6 +409,14 @@ angular.module("brimApp")
 
   var gmap = new google.maps.Map(mapEl, mapOptions);
   $scope.gmap = gmap;
+
+  $scope.toggleBounce = function() {
+    if (this.getAnimation() != null) {
+      this.setAnimation(null);
+    } else {
+      this.setAnimation(gmap.Animation.BOUNCE);
+    }
+  };
 
 });
 
