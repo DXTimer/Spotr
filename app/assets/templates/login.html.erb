@@ -1,13 +1,14 @@
-<div class="container">
+<div class="container" id = "intro">
 
-    <div class="center-form panel">
-      <div class="panel-body">
         <h4 class="text-center"><i class="ion-log-in"></i> Log in</h4>
-        <button class="btn btn-block btn-instagram" ng-click="authNetwork('instagram')">
+        <button class="btn btn-block btn-instagram" id="login-button-insta" ng-click="authNetwork('instagram')">
           <i class="ion-social-instagram"></i> Sign in with Instagram
         </button>
-        <a class="btn btn-block btn-primary" type="button" href="https://www.instagram.com/">
+        <a class="btn btn-block btn-primary" id="login-button-signup" type="button" href="https://www.instagram.com/">
           <i class="ion-social-instagram"></i> Don't have an account? SIGN UP!
         </a>
-      </div>
-    </div>
+  </div>
+
+    <video autoplay  poster="/videos/homepage.mp4" id="bgvid" loop>
+      <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Busy.mp4" type="video/webm">
+    </video>
