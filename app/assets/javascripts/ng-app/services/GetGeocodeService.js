@@ -2,7 +2,7 @@ brimApp.service('GetGeocodeService', ['$http', function($http) {
 
 
   var base = 'https://maps.googleapis.com/maps/api/geocode/json?address=';
-  var key = '&key=AIzaSyCmHbpYsYeQtY84PAXTQnfZXsGU8iemFgQ';
+  var key = '&key=AIzaSyDjqjD9OgS7NSMVGTIjBRcNYh5BAe4gXCY';
   return {
         'getGeocode': function(address) {
 
