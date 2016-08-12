@@ -7,7 +7,7 @@ This file is WIP and will be updated continually during the course of the projec
 AUTHORS:
 -------
 
-Team BRIM: Ben Stein, Ivan Bakalov, Max Provin, Rahul Ramakrishna
+Team Spotr: Ben Stein, Ivan Bakalov, Max Provin, Rahul Ramakrishna
 
 INTRODUCTION:
 ------------
@@ -69,7 +69,7 @@ A range of technologies have been used:
 - Rspec - to test in the Rails environment
 - Karma, Protractor - to test in the Angular environment
 - Travis-ci - to check the continuous integration
-- Coveralls - to check text coverage
+- Coveralls - to check test coverage
 
 INSTALLATION
 ------------
@@ -87,7 +87,7 @@ TEST
 Server side: Type rspec into the commandline and this will run the tests. Below is an example of one of these tests:
 Client side: Type npm run test for the unit tests and npm run protractor for the feature tests.
 
-LICENCE
--------
+HEROKU
+------
 
-This product is not for open distribution. All offers please refer to our legal team.
+Spotr can be found here: https://spotr.herokuapp.com. It is currently in Sandbox mode and usage is restricted only to authorised users. If you would like to try it, please get in touch with any members of the team and we can provide you with temporary access for the same.
