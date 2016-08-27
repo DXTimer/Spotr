@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/rahulrama/Brim_final/badge.svg?branch=master)](https://coveralls.io/github/rahulrama/Brim_final?branch=master)  [![Build Status](https://travis-ci.org/rahulrama/Brim_final.svg?branch=master)](https://travis-ci.org/rahulrama/Brim_final)
+[![Coverage Status](https://coveralls.io/repos/github/rahulrama/Brim_final/badge.svg?branch=master)](https://coveralls.io/github/rahulrama/Brim_final?branch=master)  [![Build Status](https://travis-ci.org/rahulrama/Brim_final.svg?branch=master)](https://travis-ci.org/rahulrama/Spotr)
 
 
 This is one of the two repos for the Final project carried out by students at Makers Academy.
